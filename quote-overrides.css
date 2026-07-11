@@ -105,6 +105,31 @@
   filter: drop-shadow(0 2px 1px rgba(64, 55, 39, 0.18));
 }
 
+/* Контур вырезается из самой секции — эффект гарантированно виден. */
+.torn-paper {
+  margin-top: -34px;
+  margin-bottom: -34px;
+  filter: drop-shadow(0 2px 2px rgba(44, 36, 23, 0.18));
+  clip-path: polygon(
+    0 26px, 3% 18px, 7% 23px, 11% 9px, 16% 20px, 21% 13px,
+    27% 27px, 32% 17px, 38% 22px, 44% 7px, 49% 19px, 55% 12px,
+    61% 25px, 66% 16px, 72% 21px, 78% 8px, 83% 18px, 89% 12px,
+    94% 24px, 100% 15px,
+    100% calc(100% - 21px), 96% calc(100% - 13px), 91% calc(100% - 25px),
+    86% calc(100% - 10px), 80% calc(100% - 20px), 74% calc(100% - 14px),
+    68% calc(100% - 27px), 62% calc(100% - 16px), 56% calc(100% - 22px),
+    50% calc(100% - 9px), 44% calc(100% - 19px), 38% calc(100% - 12px),
+    32% calc(100% - 25px), 26% calc(100% - 15px), 20% calc(100% - 23px),
+    14% calc(100% - 8px), 8% calc(100% - 19px), 3% calc(100% - 12px),
+    0 calc(100% - 22px)
+  );
+}
+
+.torn-paper::before,
+.torn-paper::after {
+  display: none;
+}
+
 @media (min-width: 760px) {
   .quote-full {
     min-height: 380px;
