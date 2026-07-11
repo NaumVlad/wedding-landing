@@ -11,6 +11,13 @@
   line-height: 1.15;
 }
 
+.location-copy b {
+  display: inline-block;
+  margin-bottom: 6px;
+  font-size: 1.35rem;
+  line-height: 1.2;
+}
+
 @media (min-width: 760px) {
   .quote-full {
     min-height: 380px;
