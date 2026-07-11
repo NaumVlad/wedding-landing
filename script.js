@@ -17,7 +17,9 @@ links.addEventListener("click",()=>links.classList.remove("open"));
 
 document.querySelector("#rsvp-form").addEventListener("submit",e=>{
   e.preventDefault();
-  const data = Object.fromEntries(new FormData(e.currentTarget));
+  const formData = new FormData(e.currentTarget);
+  const data = Object.fromEntries(formData);
+  data.drinks = formData.getAll("drinks");
   localStorage.setItem("wedding-rsvp",JSON.stringify(data));
   document.querySelector(".form-status").textContent = "Спасибо! Ваш ответ сохранён на этом устройстве.";
   e.currentTarget.reset();

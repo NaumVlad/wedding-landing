@@ -62,11 +62,23 @@
     </section>
 
     <section class="rsvp paper torn-paper" id="rsvp">
-      <p class="eyebrow">нам важно ваше решение</p><h2>Your wishes</h2><p>Пожалуйста, подтвердите присутствие заранее.</p>
+      <p class="eyebrow">нам важно ваше решение</p><h2>Your wishes</h2><p>Пожалуйста, подтвердите присутствие заранее до 15.09.2026.</p>
       <form id="rsvp-form">
         <label>Ваше имя<input name="name" required placeholder="Имя и фамилия"></label>
-        <fieldset><legend>Сможете быть с нами?</legend><label><input type="radio" name="attendance" value="Да" required> Да, с радостью</label><label><input type="radio" name="attendance" value="Нет"> К сожалению, нет</label></fieldset>
-        <label>Пожелания<textarea name="message" rows="3" placeholder="Напишите несколько тёплых слов"></textarea></label>
+        <fieldset class="choice-list"><legend>Сможете ли вы быть с нами?</legend>
+          <label class="choice"><input type="radio" name="attendance" value="Да, с радостью" required><span>Да, с радостью</span></label>
+          <label class="choice"><input type="radio" name="attendance" value="Да, я буду +1"><span>Да, я буду +1</span></label>
+          <label class="choice"><input type="radio" name="attendance" value="Да, я буду +2"><span>Да, я буду +2</span></label>
+          <label class="choice"><input type="radio" name="attendance" value="К сожалению, нет"><span>К сожалению, нет</span></label>
+        </fieldset>
+        <fieldset class="choice-list"><legend>Пожелания: что бы вы хотели пить?</legend>
+          <p class="choice-hint">Можно выбрать несколько вариантов</p>
+          <label class="choice"><input type="checkbox" name="drinks" value="Водка"><span>Водка</span></label>
+          <label class="choice"><input type="checkbox" name="drinks" value="Виски"><span>Виски</span></label>
+          <label class="choice"><input type="checkbox" name="drinks" value="Вино"><span>Вино</span></label>
+          <label class="choice"><input type="checkbox" name="drinks" value="Шампанское"><span>Шампанское</span></label>
+          <label class="choice"><input type="checkbox" name="drinks" value="Без алкоголя"><span>Без алкоголя</span></label>
+        </fieldset>
         <button class="button" type="submit">Отправить ответ</button><p class="form-status" role="status"></p>
       </form>
     </section>
