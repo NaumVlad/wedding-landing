@@ -96,6 +96,77 @@
   font-size: 0.68rem;
 }
 
+.rsvp-deadline {
+  font-weight: 500;
+}
+
+.rsvp-deadline strong {
+  display: inline-block;
+  font-weight: 700;
+  color: var(--olive);
+  white-space: nowrap;
+}
+
+.required-mark {
+  color: var(--olive);
+  font-weight: 700;
+}
+
+.hero-copy > .eyebrow {
+  position: relative;
+  top: -4px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.hero-copy .date {
+  font-size: 2.15rem;
+}
+
+.brand,
+.monogram {
+  border-radius: 48% 52% 50% 50% / 58% 55% 45% 42%;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 400;
+}
+
+.brand {
+  width: 76px;
+  height: 94px;
+  font-size: 2.65rem;
+}
+
+.brand span {
+  margin-left: -13px;
+  margin-top: 18px;
+}
+
+footer .monogram {
+  width: 142px;
+  height: 174px;
+  font-size: 5rem;
+}
+
+footer .monogram span {
+  margin-left: -24px;
+  margin-top: 31px;
+}
+
+footer p {
+  margin-top: 28px;
+  margin-bottom: 4px;
+  font-size: clamp(2.4rem, 11vw, 5rem);
+  line-height: 1;
+}
+
+.footer-date {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  font: 500 clamp(2.7rem, 13vw, 6.5rem)/1 "Cormorant Garamond", serif;
+  letter-spacing: 0.08em;
+}
+
 .torn-paper::before {
   top: -27px;
   clip-path: polygon(0 52%, 4% 70%, 8% 30%, 13% 58%, 18% 18%, 23% 62%, 29% 36%, 35% 74%, 41% 24%, 47% 55%, 53% 16%, 59% 65%, 65% 32%, 71% 72%, 77% 22%, 83% 60%, 89% 34%, 95% 68%, 100% 42%, 100% 100%, 0 100%);

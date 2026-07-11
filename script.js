@@ -15,8 +15,18 @@ const menu = document.querySelector(".menu"), links = document.querySelector(".n
 menu.addEventListener("click",()=>{const open=links.classList.toggle("open");menu.setAttribute("aria-expanded",open)});
 links.addEventListener("click",()=>links.classList.remove("open"));
 
+const drinkInputs = [...document.querySelectorAll('input[name="drinks"]')];
+drinkInputs.forEach(input => input.addEventListener("change", () => {
+  drinkInputs[0].setCustomValidity("");
+}));
+
 document.querySelector("#rsvp-form").addEventListener("submit",e=>{
   e.preventDefault();
+  if (!drinkInputs.some(input => input.checked)) {
+    drinkInputs[0].setCustomValidity("Выберите хотя бы один вариант напитка");
+    drinkInputs[0].reportValidity();
+    return;
+  }
   const formData = new FormData(e.currentTarget);
   const data = Object.fromEntries(formData);
   data.drinks = formData.getAll("drinks");

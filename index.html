@@ -62,16 +62,16 @@
     </section>
 
     <section class="rsvp paper torn-paper" id="rsvp">
-      <p class="eyebrow">нам важно ваше решение</p><h2>Your wishes</h2><p>Пожалуйста, подтвердите присутствие заранее до 15.09.2026.</p>
+      <p class="eyebrow">нам важно ваше решение</p><h2>Your wishes</h2><p class="rsvp-deadline">Пожалуйста, подтвердите присутствие заранее до <strong>13.09.2026</strong></p>
       <form id="rsvp-form">
-        <label>Ваше имя<input name="name" required placeholder="Имя и фамилия"></label>
-        <fieldset class="choice-list"><legend>Сможете ли вы быть с нами?</legend>
+        <label><span>Ваше имя <b class="required-mark">*</b></span><input name="name" required placeholder="Имя и фамилия"></label>
+        <fieldset class="choice-list"><legend>Сможете ли вы быть с нами? <b class="required-mark">*</b></legend>
           <label class="choice"><input type="radio" name="attendance" value="Да, с радостью" required><span>Да, с радостью</span></label>
           <label class="choice"><input type="radio" name="attendance" value="Да, я буду +1"><span>Да, я буду +1</span></label>
           <label class="choice"><input type="radio" name="attendance" value="Да, я буду +2"><span>Да, я буду +2</span></label>
           <label class="choice"><input type="radio" name="attendance" value="К сожалению, нет"><span>К сожалению, нет</span></label>
         </fieldset>
-        <fieldset class="choice-list"><legend>Пожелания: что бы вы хотели пить?</legend>
+        <fieldset class="choice-list" aria-required="true"><legend>Пожелания: что бы вы хотели пить? <b class="required-mark">*</b></legend>
           <p class="choice-hint">Можно выбрать несколько вариантов</p>
           <label class="choice"><input type="checkbox" name="drinks" value="Водка"><span>Водка</span></label>
           <label class="choice"><input type="checkbox" name="drinks" value="Виски"><span>Виски</span></label>
@@ -84,7 +84,7 @@
     </section>
   </main>
 
-  <footer class="photo photo-1"><div class="monogram">N<span>M</span></div><p>До встречи на нашей свадьбе!</p><small>10 · 10 · 2026</small></footer>
+  <footer class="photo photo-1"><div class="monogram">N<span>M</span></div><p>Дата нашей свадьбы</p><strong class="footer-date">10 · 10 · 2026</strong></footer>
   <script src="script.js"></script>
 </body>
 </html>
