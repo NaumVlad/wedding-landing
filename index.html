@@ -2,25 +2,25 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Свадебное приглашение Елены и Романа">
-  <title>Елена & Роман — свадебное приглашение</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="description" content="Свадебное приглашение Никиты и Марии">
+  <title>Никита & Мария — свадебное приглашение</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="hero photo photo-1">
+  <header class="hero photo photo-1" id="top">
     <nav class="nav" aria-label="Навигация">
-      <a class="brand" href="#top">E<span>R</span></a>
+      <a class="brand" href="#top">N<span>M</span></a>
       <button class="menu" aria-label="Открыть меню" aria-expanded="false">Меню</button>
       <div class="nav-links"><a href="#story">Приглашение</a><a href="#timing">Расписание</a><a href="#location">Место</a><a href="#rsvp">Анкета</a></div>
     </nav>
-    <div class="hero-copy" id="top">
+    <div class="hero-copy">
       <p class="eyebrow">свадебное приглашение</p>
-      <h1>Елена <i>&</i> Роман</h1>
-      <p class="date">12 · 06 · 2027</p>
+      <h1>Никита <i>&</i> Мария</h1>
+      <p class="date">10 · 10 · 2026</p>
       <a class="scroll" href="#story">Листайте вниз <span>↓</span></a>
     </div>
   </header>
@@ -32,28 +32,27 @@
       <p>С радостью сообщаем, что мы решили связать свои сердца и души узами брака. Будем счастливы разделить этот особенный день вместе с вами.</p>
       <div class="ornament">❦</div>
       <div class="countdown" aria-label="Обратный отсчёт">
-        <div><strong id="days">000</strong><span>дней</span></div><div><strong id="hours">00</strong><span>часов</span></div><div><strong id="minutes">00</strong><span>минут</span></div><div><strong id="seconds">00</strong><span>секунд</span></div>
+        <div><strong id="days">000</strong><span>дней</span></div>
+        <div><strong id="hours">00</strong><span>часов</span></div>
+        <div><strong id="minutes">00</strong><span>минут</span></div>
+        <div><strong id="seconds">00</strong><span>секунд</span></div>
       </div>
     </section>
 
-    <section class="split photo-block">
-      <div class="photo photo-2" role="img" aria-label="Невеста в свадебном платье"></div>
-      <div class="quote"><p>«Любовь — это когда счастье другого становится твоим собственным»</p></div>
+    <section class="quote quote-full">
+      <p>«Любовь — это когда счастье другого становится твоим собственным»</p>
     </section>
 
     <section class="timing paper" id="timing">
-      <p class="eyebrow">расписание дня</p><h2>Timing</h2>
+      <p class="eyebrow">расписание</p><h2>Timing</h2>
       <div class="timeline">
-        <article><time>16:30</time><div><h3>Сбор гостей</h3><p>Знакомство и приветственный бокал</p></div></article>
-        <article><time>17:00</time><div><h3>Церемония</h3><p>Торжественная регистрация</p></div></article>
-        <article><time>18:00</time><div><h3>Фотосессия</h3><p>Памятные кадры с гостями</p></div></article>
-        <article><time>19:00</time><div><h3>Праздничный ужин</h3><p>Тосты, музыка и танцы</p></div></article>
+        <article><div><h3>День первый</h3><p>Начало</p></div><time>15:00</time></article>
+        <article><div><h3>День второй</h3></div></article>
       </div>
     </section>
 
-    <section class="details">
+    <section class="details" aria-label="Дресс-код">
       <div class="photo photo-4" role="img" aria-label="Свадебные туфли и белые лилии"></div>
-      <div class="dress paper"><p class="eyebrow">внешний вид</p><h2>Dress code</h2><p>Нам будет приятно, если вы поддержите цветовую гамму нашего торжества.</p><div class="palette" aria-label="Цвета дресс-кода"><i></i><i></i><i></i><i></i><i></i></div></div>
     </section>
 
     <section class="location" id="location">
@@ -62,7 +61,7 @@
     </section>
 
     <section class="rsvp paper" id="rsvp">
-      <p class="eyebrow">нам важно ваше решение</p><h2>Your wishes</h2><p>Пожалуйста, подтвердите присутствие до 12 мая.</p>
+      <p class="eyebrow">нам важно ваше решение</p><h2>Your wishes</h2><p>Пожалуйста, подтвердите присутствие заранее.</p>
       <form id="rsvp-form">
         <label>Ваше имя<input name="name" required placeholder="Имя и фамилия"></label>
         <fieldset><legend>Сможете быть с нами?</legend><label><input type="radio" name="attendance" value="Да" required> Да, с радостью</label><label><input type="radio" name="attendance" value="Нет"> К сожалению, нет</label></fieldset>
@@ -72,7 +71,7 @@
     </section>
   </main>
 
-  <footer class="photo photo-1"><div class="monogram">E<span>R</span></div><p>До встречи на нашей свадьбе!</p><small>12 · 06 · 2027</small></footer>
+  <footer class="photo photo-1"><div class="monogram">N<span>M</span></div><p>До встречи на нашей свадьбе!</p><small>10 · 10 · 2026</small></footer>
   <script src="script.js"></script>
 </body>
 </html>

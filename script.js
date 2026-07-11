@@ -1,5 +1,5 @@
 // РЕДАКТИРОВАНИЕ: замените дату свадьбы ниже (год, месяц-1, день, час).
-const weddingDate = new Date(2027, 5, 12, 17, 0, 0);
+const weddingDate = new Date(2026, 9, 10, 15, 0, 0);
 
 const pad = n => String(Math.max(0, n)).padStart(2, "0");
 function updateCountdown(){
