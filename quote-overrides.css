@@ -161,6 +161,22 @@
   transform: rotate(180deg);
 }
 
+/* Кромка использует тот же цвет и точечную фактуру, что и белый блок. */
+.torn-paper::before,
+.torn-paper::after {
+  background-color: var(--paper);
+  background-image: radial-gradient(#ddd8ca 0.5px, transparent 0.5px);
+  background-size: 7px 7px;
+  -webkit-mask-image: url("assets/torn-paper-edge.png");
+  mask-image: url("assets/torn-paper-edge.png");
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center bottom;
+  mask-position: center bottom;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+
 @media (min-width: 760px) {
   .quote-full {
     min-height: 380px;
