@@ -18,6 +18,41 @@
   line-height: 1.2;
 }
 
+/* Отдельные кадры сохраняют естественные пропорции фотографий. */
+.photo {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.photo.photo-1 {
+  background-image: url("assets/couple.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.photo.photo-3 {
+  background-image: url("assets/venue.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.photo.photo-4 {
+  background-image: url("assets/shoes.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 759px) {
+  .details,
+  .details > .photo,
+  .location > .photo {
+    width: 100%;
+    min-height: 0;
+    aspect-ratio: 4 / 5;
+  }
+}
+
 @media (min-width: 760px) {
   .quote-full {
     min-height: 380px;
