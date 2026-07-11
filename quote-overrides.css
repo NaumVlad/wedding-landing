@@ -1,0 +1,18 @@
+.quote-full {
+  min-height: 38svh;
+  padding: 42px 18px;
+}
+
+.quote p {
+  max-width: 900px;
+  margin: 0;
+  white-space: nowrap;
+  font-size: clamp(1.55rem, 6vw, 3rem);
+  line-height: 1.15;
+}
+
+@media (min-width: 760px) {
+  .quote-full {
+    min-height: 380px;
+  }
+}
