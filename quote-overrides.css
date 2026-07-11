@@ -130,6 +130,37 @@
   display: none;
 }
 
+/* Финальный вариант: настоящая растровая кромка разорванной бумаги. */
+.torn-paper {
+  margin-top: 0;
+  margin-bottom: 0;
+  clip-path: none;
+  filter: none;
+  overflow: visible;
+}
+
+.torn-paper::before,
+.torn-paper::after {
+  display: block;
+  height: clamp(62px, 7vw, 134px);
+  clip-path: none;
+  background-color: transparent;
+  background-image: url("assets/torn-paper-edge.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 100% 100%;
+  filter: drop-shadow(0 2px 1px rgba(55, 44, 27, 0.2));
+}
+
+.torn-paper::before {
+  top: calc(clamp(62px, 7vw, 134px) * -1 + 2px);
+}
+
+.torn-paper::after {
+  bottom: calc(clamp(62px, 7vw, 134px) * -1 + 2px);
+  transform: rotate(180deg);
+}
+
 @media (min-width: 760px) {
   .quote-full {
     min-height: 380px;
