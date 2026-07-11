@@ -82,6 +82,29 @@
   }
 }
 
+/* Органичный край: отдельные верхний и нижний рисунки с волокнами бумаги. */
+.torn-paper::before,
+.torn-paper::after {
+  height: 42px;
+  clip-path: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+.torn-paper::before {
+  top: -41px;
+  background-image: url("assets/torn-paper-top.svg");
+  filter: drop-shadow(0 -1px 0 rgba(64, 55, 39, 0.12));
+}
+
+.torn-paper::after {
+  bottom: -41px;
+  background-image: url("assets/torn-paper-bottom.svg");
+  filter: drop-shadow(0 2px 1px rgba(64, 55, 39, 0.18));
+}
+
 @media (min-width: 760px) {
   .quote-full {
     min-height: 380px;
