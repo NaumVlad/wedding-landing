@@ -207,7 +207,7 @@
   width: auto;
   height: auto;
   gap: 0.2em;
-  font-size: clamp(4.6rem, 15vw, 8.8rem);
+  font-size: clamp(4.1rem, 12vw, 7.4rem);
   text-shadow: 0 2px 16px rgba(0, 0, 0, 0.18);
 }
 
@@ -317,7 +317,7 @@ footer.photo-1 {
   }
 
   .hero-monogram {
-    font-size: clamp(4.4rem, 24vw, 6.6rem);
+    font-size: clamp(3.9rem, 20vw, 5.7rem);
   }
 
   .hero-copy h1 {

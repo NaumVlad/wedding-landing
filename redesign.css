@@ -59,13 +59,37 @@ time,
 
 .hero-copy {
   position: absolute;
-  top: clamp(190px, 22svh, 260px);
-  left: 44%;
+  inset: 0;
   width: 100%;
-  max-width: 760px;
-  padding: 0 20px;
-  transform: translateX(-50%);
+  max-width: none;
+  padding: 0;
+  transform: none;
+}
+
+.hero-identity,
+.hero-motto {
+  position: absolute;
+  z-index: 1;
   filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.9)) drop-shadow(0 1px 1px rgba(0, 0, 0, 0.75));
+}
+
+.hero-identity {
+  top: clamp(130px, 14svh, 185px);
+  left: 50%;
+  width: min(90%, 680px);
+  text-align: center;
+  transform: translateX(-50%);
+}
+
+.hero-motto {
+  top: clamp(390px, 39svh, 520px);
+  left: clamp(28px, 7vw, 120px);
+  width: min(72vw, 560px);
+  text-align: left;
+}
+
+.hero-motto .date {
+  margin-left: 12%;
 }
 
 .hero-note,
@@ -521,10 +545,25 @@ time,
   }
 
   .hero-copy {
-    top: clamp(260px, 29svh, 390px);
-    left: 43%;
-    padding: 0 18px;
-    transform: translate(-50%, -50%);
+    inset: 0;
+    padding: 0;
+    transform: none;
+  }
+
+  .hero-identity {
+    top: clamp(125px, 14svh, 180px);
+    left: 50%;
+    width: calc(100% - 36px);
+  }
+
+  .hero-motto {
+    top: clamp(380px, 35svh, 480px);
+    left: 6vw;
+    width: 76vw;
+  }
+
+  .hero-motto .date {
+    margin-left: 14%;
   }
 
   .hero-note {
