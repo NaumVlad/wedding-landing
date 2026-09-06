@@ -49,8 +49,8 @@ time,
 
 .photo.photo-1 {
   background-image: url("assets/hero-portrait.jpg");
-  background-size: 135% auto;
-  background-position: right center;
+  background-size: cover;
+  background-position: center 46%;
 }
 
 .hero::after {
@@ -516,8 +516,8 @@ time,
   }
 
   .photo.photo-1 {
-    background-size: auto 112%;
-    background-position: 90% center;
+    background-size: cover;
+    background-position: center 45%;
   }
 
   .hero-copy {
