@@ -106,7 +106,7 @@ time,
   z-index: 1;
   right: auto;
   left: 5vw;
-  top: 33%;
+  top: 31%;
   margin: 0;
   color: rgba(255, 255, 255, 0.75);
   font-size: clamp(1.8rem, 3vw, 3.2rem);
@@ -571,7 +571,7 @@ time,
     top: auto;
     right: auto;
     left: 18px;
-    bottom: 155px;
+    bottom: 190px;
     font-size: 1.65rem;
   }
 
