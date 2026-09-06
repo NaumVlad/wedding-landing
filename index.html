@@ -14,7 +14,11 @@
 <body>
   <header class="hero photo photo-1" id="top">
     <nav class="nav" aria-label="Навигация">
-      <a class="brand" href="#top">N<span>M</span></a>
+      <a class="brand" href="#top" aria-label="Никита и Мария">
+        <span class="monogram-letter">N</span>
+        <span class="monogram-divider" aria-hidden="true"></span>
+        <span class="monogram-letter">M</span>
+      </a>
       <button class="menu" aria-label="Открыть меню" aria-expanded="false">Меню</button>
       <div class="nav-links"><a href="#story">Приглашение</a><a href="#timing">Расписание</a><a href="#location">Место</a><a href="#rsvp">Анкета</a></div>
     </nav>
@@ -22,6 +26,7 @@
       <p class="eyebrow">свадебное приглашение</p>
       <h1>Никита <i>&</i> Мария</h1>
       <p class="date">10 · 10 · 2026</p>
+      <p class="dolce-vita">DOLCE VITA</p>
       <a class="scroll" href="#story">Листайте вниз <span>↓</span></a>
     </div>
   </header>
@@ -84,7 +89,7 @@
     </section>
   </main>
 
-  <footer class="photo photo-1"><div class="monogram">N<span>M</span></div><p>Дата нашей свадьбы</p><strong class="footer-date">10 · 10 · 2026</strong></footer>
+  <footer class="photo photo-1"><div class="monogram" aria-label="Никита и Мария"><span class="monogram-letter">N</span><span class="monogram-divider" aria-hidden="true"></span><span class="monogram-letter">M</span></div><p>Дата нашей свадьбы</p><strong class="footer-date">10 · 10 · 2026</strong></footer>
   <script src="script.js"></script>
 </body>
 </html>

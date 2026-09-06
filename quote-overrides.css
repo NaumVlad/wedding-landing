@@ -120,36 +120,61 @@
 }
 
 .hero-copy .date {
+  margin-bottom: 0;
   font-size: 2.15rem;
 }
 
 .brand,
 .monogram {
-  border-radius: 48% 52% 50% 50% / 58% 55% 45% 42%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.28em;
+  border: 0;
+  border-radius: 0;
   font-family: "Cormorant Garamond", serif;
   font-weight: 400;
+  line-height: 1;
 }
 
 .brand {
-  width: 76px;
-  height: 94px;
-  font-size: 2.65rem;
+  width: auto;
+  height: 64px;
+  font-size: 3.25rem;
 }
 
-.brand span {
-  margin-left: -13px;
-  margin-top: 18px;
+.monogram-letter {
+  display: block;
+  min-width: 0.72em;
+  text-align: center;
+  font-style: normal;
+}
+
+.brand span,
+.monogram span {
+  margin: 0;
+}
+
+.monogram-divider {
+  display: block;
+  width: 1px;
+  height: 0.92em;
+  background: currentColor;
+  opacity: 0.82;
+}
+
+.dolce-vita {
+  margin: 0.35rem 0 0;
+  font: 500 clamp(0.82rem, 2.4vw, 1.05rem)/1.2 "Cormorant Garamond", serif;
+  letter-spacing: 0.52em;
+  text-transform: uppercase;
+  text-indent: 0.52em;
 }
 
 footer .monogram {
-  width: 142px;
-  height: 174px;
-  font-size: 5rem;
-}
-
-footer .monogram span {
-  margin-left: -24px;
-  margin-top: 31px;
+  width: auto;
+  height: auto;
+  font-size: clamp(5rem, 18vw, 8.5rem);
 }
 
 footer p {
@@ -203,6 +228,16 @@ footer p {
 }
 
 @media (max-width: 759px) {
+  .brand {
+    height: 56px;
+    font-size: 2.75rem;
+  }
+
+  .dolce-vita {
+    letter-spacing: 0.42em;
+    text-indent: 0.42em;
+  }
+
   .details,
   .details > .photo,
   .location > .photo {
