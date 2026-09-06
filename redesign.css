@@ -513,7 +513,8 @@ time,
   }
 
   .photo.photo-1 {
-    background-position: right center;
+    background-size: auto 112%;
+    background-position: 90% center;
   }
 
   .hero-copy {
