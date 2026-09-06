@@ -104,13 +104,14 @@ time,
 .hero-note {
   position: absolute;
   z-index: 1;
-  right: 5vw;
+  right: auto;
+  left: 5vw;
   top: 33%;
   margin: 0;
   color: rgba(255, 255, 255, 0.75);
   font-size: clamp(1.8rem, 3vw, 3.2rem);
   line-height: 0.9;
-  text-align: right;
+  text-align: left;
   transform: rotate(-5deg);
   filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.9));
 }
@@ -568,7 +569,8 @@ time,
 
   .hero-note {
     top: auto;
-    right: 18px;
+    right: auto;
+    left: 18px;
     bottom: 155px;
     font-size: 1.65rem;
   }
