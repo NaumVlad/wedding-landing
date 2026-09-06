@@ -1,36 +1,37 @@
-// РЕДАКТИРОВАНИЕ: замените дату свадьбы ниже (год, месяц-1, день, час).
-const weddingDate = new Date(2026, 9, 10, 15, 0, 0);
+const menu = document.querySelector(".menu");
+const links = document.querySelector(".nav-links");
 
-const pad = n => String(Math.max(0, n)).padStart(2, "0");
-function updateCountdown(){
-  const distance = Math.max(0, weddingDate - new Date());
-  document.querySelector("#days").textContent = String(Math.floor(distance / 86400000)).padStart(3,"0");
-  document.querySelector("#hours").textContent = pad(Math.floor(distance / 3600000) % 24);
-  document.querySelector("#minutes").textContent = pad(Math.floor(distance / 60000) % 60);
-  document.querySelector("#seconds").textContent = pad(Math.floor(distance / 1000) % 60);
-}
-updateCountdown(); setInterval(updateCountdown,1000);
+menu?.addEventListener("click", () => {
+  const open = links.classList.toggle("open");
+  menu.setAttribute("aria-expanded", String(open));
+});
 
-const menu = document.querySelector(".menu"), links = document.querySelector(".nav-links");
-menu.addEventListener("click",()=>{const open=links.classList.toggle("open");menu.setAttribute("aria-expanded",open)});
-links.addEventListener("click",()=>links.classList.remove("open"));
+links?.addEventListener("click", () => {
+  links.classList.remove("open");
+  menu?.setAttribute("aria-expanded", "false");
+});
 
+const form = document.querySelector("#rsvp-form");
 const drinkInputs = [...document.querySelectorAll('input[name="drinks"]')];
+
 drinkInputs.forEach(input => input.addEventListener("change", () => {
-  drinkInputs[0].setCustomValidity("");
+  drinkInputs[0]?.setCustomValidity("");
 }));
 
-document.querySelector("#rsvp-form").addEventListener("submit",e=>{
-  e.preventDefault();
+form?.addEventListener("submit", event => {
+  event.preventDefault();
+
   if (!drinkInputs.some(input => input.checked)) {
-    drinkInputs[0].setCustomValidity("Выберите хотя бы один вариант напитка");
-    drinkInputs[0].reportValidity();
+    drinkInputs[0]?.setCustomValidity("Оберіть хоча б один варіант напою");
+    drinkInputs[0]?.reportValidity();
     return;
   }
-  const formData = new FormData(e.currentTarget);
+
+  const formData = new FormData(form);
   const data = Object.fromEntries(formData);
   data.drinks = formData.getAll("drinks");
-  localStorage.setItem("wedding-rsvp",JSON.stringify(data));
-  document.querySelector(".form-status").textContent = "Спасибо! Ваш ответ сохранён на этом устройстве.";
-  e.currentTarget.reset();
+  localStorage.setItem("wedding-rsvp", JSON.stringify(data));
+
+  document.querySelector(".form-status").textContent = "Дякуємо! Вашу відповідь збережено на цьому пристрої.";
+  form.reset();
 });

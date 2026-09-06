@@ -1,99 +1,134 @@
 <!doctype html>
-<html lang="ru">
+<html lang="uk">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <meta name="description" content="Свадебное приглашение Никиты и Марии">
-  <title>Никита & Мария — свадебное приглашение</title>
+  <meta name="description" content="Весільне запрошення Нікіти та Марії">
+  <title>Нікіта & Марія — весільне запрошення</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500&amp;family=Cormorant+Garamond:wght@400;500;600&amp;family=Italianno&amp;family=Montserrat:wght@300;400;500&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="quote-overrides.css">
+  <link rel="stylesheet" href="redesign.css">
 </head>
 <body>
   <header class="hero photo photo-1" id="top">
-    <nav class="nav" aria-label="Навигация">
-      <a class="brand" href="#top" aria-label="Никита и Мария">
-        <span class="monogram-letter">N</span>
-        <span class="monogram-divider" aria-hidden="true"></span>
-        <span class="monogram-letter">M</span>
-      </a>
-      <button class="menu" aria-label="Открыть меню" aria-expanded="false">Меню</button>
-      <div class="nav-links"><a href="#story">Приглашение</a><a href="#timing">Расписание</a><a href="#location">Место</a><a href="#rsvp">Анкета</a></div>
+    <nav class="nav" aria-label="Навігація">
+      <a class="brand" href="#top" aria-label="Нікіта і Марія"><span class="monogram-letter">N</span><span class="monogram-divider" aria-hidden="true"></span><span class="monogram-letter">M</span></a>
+      <button class="menu" aria-label="Відкрити меню" aria-expanded="false">Меню</button>
+      <div class="nav-links"><a href="#invitation">Запрошення</a><a href="#program">Програма</a><a href="#details">Деталі</a><a href="#rsvp">Анкета</a></div>
     </nav>
     <div class="hero-copy">
-      <div class="monogram hero-monogram" aria-label="Никита и Мария">
-        <span class="monogram-letter">N</span>
-        <span class="monogram-divider" aria-hidden="true"></span>
-        <span class="monogram-letter">M</span>
-      </div>
+      <div class="monogram hero-monogram" aria-label="Нікіта і Марія"><span class="monogram-letter">N</span><span class="monogram-divider" aria-hidden="true"></span><span class="monogram-letter">M</span></div>
       <h1>NIKITA <i>&amp;</i> MARIA</h1>
       <p class="dolce-vita">La Dolce Vita</p>
       <p class="date">10 · 10 · 2026</p>
     </div>
-    <a class="scroll" href="#story">Листайте вниз <span>↓</span></a>
+    <p class="photo-note hero-note" aria-hidden="true">Two days.<br>One beautiful story ♡</p>
+    <a class="scroll" href="#invitation">Гортайте вниз <span>↓</span></a>
   </header>
 
   <main>
-    <section class="intro paper torn-paper" id="story">
-      <p class="eyebrow">этот день — о любви</p>
-      <h2>Дорогие друзья<br>и родные!</h2>
-      <p>С радостью сообщаем, что мы решили связать свои сердца и души узами брака. Будем счастливы разделить этот особенный день вместе с вами.</p>
-      <div class="ornament">❦</div>
-      <div class="countdown" aria-label="Обратный отсчёт">
-        <div><strong id="days">000</strong><span>дней</span></div>
-        <div><strong id="hours">00</strong><span>часов</span></div>
-        <div><strong id="minutes">00</strong><span>минут</span></div>
-        <div><strong id="seconds">00</strong><span>секунд</span></div>
+    <section class="invitation-section" id="invitation">
+      <img class="floral floral-intro" src="assets/hydrangea-corner.png" alt="" aria-hidden="true">
+      <div class="section-inner invitation-copy">
+        <p class="section-kicker">Разом із найдорожчими</p>
+        <h2>Дорогі рідні<br>та друзі!</h2>
+        <p>Є моменти, якими хочеться ділитися лише з найдорожчими.</p>
+        <p class="marry-line">Ми одружуємося!</p>
+        <p>І будемо щасливі провести ці два особливі дні разом із вами.</p>
+        <p class="handwritten-note" aria-hidden="true">До зустрічі там,<br>де починається наша історія ♡</p>
       </div>
     </section>
 
-    <section class="quote quote-full">
-      <p>«Любовь — это когда счастье другого<br>становится твоим собственным»</p>
-    </section>
-
-    <section class="timing paper torn-paper" id="timing">
-      <p class="eyebrow">расписание</p><h2>Timing</h2>
-      <div class="timeline">
-        <article><div><h3>День первый</h3><p>Початок</p></div><time>15:00</time></article>
-        <article><div><h3>День второй</h3><p>В українському стилі</p></div></article>
+    <section class="program-section" id="program">
+      <div class="section-inner">
+        <p class="section-kicker">10–11 жовтня 2026</p>
+        <h2>Wedding Program</h2>
+        <div class="program-grid">
+          <article class="day-card day-one">
+            <header><div><span>Wedding Day I</span><time datetime="2026-10-10">10.10.2026</time></div><p>Перший день</p></header>
+            <ol class="schedule-list">
+              <li><time>13:00</time><span>Зустріч гостей &amp; поселення</span></li>
+              <li><time>14:30</time><span>Welcome</span></li>
+              <li><time>15:00</time><span>Wedding Ceremony</span></li>
+              <li><time>16:30</time><span>Святкова вечеря</span></li>
+            </ol>
+            <div class="venue-line"><span>⌖</span><p><strong>Osokory Resort &amp; SPA</strong><br>вулиця Острівна, 1, Орлівщина</p></div>
+            <a class="light-button" href="https://www.google.com/maps/search/?api=1&amp;query=Osokory+Resort+%26+SPA%2C+вулиця+Острівна+1%2C+Орлівщина%2C+Дніпропетровська+область" target="_blank" rel="noopener">Як дістатися →</a>
+          </article>
+          <article class="day-card day-two">
+            <header><div><span>Wedding Day II</span><time datetime="2026-10-11">11.10.2026</time></div><p>Ukrainian Style</p></header>
+            <p class="day-lead">А наступного дня — по-нашому, по-українськи 🇺🇦</p>
+            <ol class="schedule-list">
+              <li><time>11:00</time><span><b>Ранковий розігрів на літній терасі</b><small>Буде музика лунати, будемо похмелятися та танцювати!</small></span></li>
+              <li><time>13:00</time><span><b>Святковий обід</b><small>Зустрічаємося у залі ресторану.</small></span></li>
+              <li><time>15:00</time><span><b>Фінал весільного марафону</b><small>Обіймаємося, цілуємося та кажемо один одному «до побачення!»</small></span></li>
+            </ol>
+            <p class="handwritten-note day-note" aria-hidden="true">А наступного разу —<br>на вашому весіллі! ♡</p>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section class="details" aria-label="Фотография пары">
-      <div class="photo photo-4" role="img" aria-label="Никита и Мария смотрят друг на друга"></div>
+    <section class="details-photo" aria-label="Фотографія Нікіти та Марії"><p class="photo-note details-note" aria-hidden="true">Good food.<br>Good people.<br>Great memories ♡</p></section>
+
+    <section class="details-section" id="details">
+      <img class="floral floral-details" src="assets/hydrangea-corner.png" alt="" aria-hidden="true">
+      <div class="section-inner">
+        <p class="section-kicker">Все, що варто знати</p>
+        <h2>Деталі &amp; Побажання</h2>
+        <div class="detail-cards">
+          <article class="detail-card"><span class="detail-icon" aria-hidden="true">↝</span><h3>Transfer</h3><p>Для вашої зручності буде організовано трансфер. Якщо бажаєте скористатися ним, будь ласка, повідомте про це заздалегідь в анкеті нижче.</p></article>
+          <article class="detail-card"><span class="detail-icon" aria-hidden="true">⌂</span><h3>Проживання</h3><p>Для гостей доступне проживання на території комплексу. Якщо вам потрібен номер, позначте це в анкеті — ми зв’яжемося з вами та уточнимо деталі.</p></article>
+          <article class="detail-card"><span class="detail-icon" aria-hidden="true">◇</span><h3>One little wish</h3><p>Замість квітів будемо раді пляшці вашого улюбленого напою — так теплі спогади про цей день залишаться з нами надовго.</p></article>
+        </div>
+      </div>
     </section>
 
-    <section class="location" id="location">
-      <div class="location-copy paper torn-paper"><p class="eyebrow">место проведения</p><h2>Location</h2><p><b>Загородный комплекс «Осокори»</b><br>вулиця Острівна, 1, Орлівщина</p><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Osokory+Resort+%26+SPA%2C+вулиця+Острівна+1%2C+Орлівщина%2C+Дніпропетровська+область" target="_blank" rel="noopener">Посмотреть на карте</a></div>
-      <div class="photo photo-3" role="img" aria-label="Никита и Мария в лучах вечернего солнца"></div>
-    </section>
-
-    <section class="rsvp paper torn-paper" id="rsvp">
-      <p class="eyebrow">нам важно ваше решение</p><h2>Your wishes</h2><p class="rsvp-deadline">Пожалуйста, подтвердите присутствие заранее до <strong>13.09.2026</strong></p>
-      <form id="rsvp-form">
-        <label><span>Ваше имя <b class="required-mark">*</b></span><input name="name" required placeholder="Имя и фамилия"></label>
-        <fieldset class="choice-list"><legend>Сможете ли вы быть с нами? <b class="required-mark">*</b></legend>
-          <label class="choice"><input type="radio" name="attendance" value="Да, с радостью" required><span>Да, с радостью</span></label>
-          <label class="choice"><input type="radio" name="attendance" value="Да, я буду +1"><span>Да, я буду +1</span></label>
-          <label class="choice"><input type="radio" name="attendance" value="Да, я буду +2"><span>Да, я буду +2</span></label>
-          <label class="choice"><input type="radio" name="attendance" value="К сожалению, нет"><span>К сожалению, нет</span></label>
-        </fieldset>
-        <fieldset class="choice-list" aria-required="true"><legend>Пожелания: что бы вы хотели пить? <b class="required-mark">*</b></legend>
-          <p class="choice-hint">Можно выбрать несколько вариантов</p>
-          <label class="choice"><input type="checkbox" name="drinks" value="Водка"><span>Водка</span></label>
-          <label class="choice"><input type="checkbox" name="drinks" value="Виски"><span>Виски</span></label>
-          <label class="choice"><input type="checkbox" name="drinks" value="Вино"><span>Вино</span></label>
-          <label class="choice"><input type="checkbox" name="drinks" value="Шампанское"><span>Шампанское</span></label>
-          <label class="choice"><input type="checkbox" name="drinks" value="Без алкоголя"><span>Без алкоголя</span></label>
-        </fieldset>
-        <button class="button" type="submit">Отправить ответ</button><p class="form-status" role="status"></p>
-      </form>
+    <section class="rsvp-section" id="rsvp">
+      <div class="section-inner rsvp-inner">
+        <p class="section-kicker">Нам важливе ваше рішення</p>
+        <h2>Your Wishes</h2>
+        <p class="rsvp-deadline">Будь ласка, підтвердьте присутність до <strong>13.09.2026</strong></p>
+        <form id="rsvp-form">
+          <label class="text-field"><span>Ваше ім’я <b class="required-mark">*</b></span><input name="name" required placeholder="Ім’я та прізвище"></label>
+          <fieldset class="choice-list">
+            <legend>Чи зможете ви бути з нами? <b class="required-mark">*</b></legend>
+            <label class="choice"><input type="radio" name="attendance" value="Так, із радістю" required><span>Так, із радістю</span></label>
+            <label class="choice"><input type="radio" name="attendance" value="Так, я буду +1"><span>Так, я буду +1</span></label>
+            <label class="choice"><input type="radio" name="attendance" value="Так, я буду +2"><span>Так, я буду +2</span></label>
+            <label class="choice"><input type="radio" name="attendance" value="На жаль, ні"><span>На жаль, ні</span></label>
+          </fieldset>
+          <fieldset class="choice-list" aria-required="true">
+            <legend>Що б ви хотіли пити? <b class="required-mark">*</b></legend>
+            <p class="choice-hint">Можна обрати декілька варіантів</p>
+            <label class="choice"><input type="checkbox" name="drinks" value="Горілка"><span>Горілка</span></label>
+            <label class="choice"><input type="checkbox" name="drinks" value="Віскі"><span>Віскі</span></label>
+            <label class="choice"><input type="checkbox" name="drinks" value="Вино"><span>Вино</span></label>
+            <label class="choice"><input type="checkbox" name="drinks" value="Шампанське"><span>Шампанське</span></label>
+            <label class="choice"><input type="checkbox" name="drinks" value="Без алкоголю"><span>Без алкоголю</span></label>
+          </fieldset>
+          <div class="form-options-grid">
+            <fieldset class="choice-list compact-choices"><legend>Чи потрібен вам трансфер?</legend><label class="choice"><input type="radio" name="transfer" value="Так"><span>Так</span></label><label class="choice"><input type="radio" name="transfer" value="Ні"><span>Ні</span></label></fieldset>
+            <fieldset class="choice-list compact-choices"><legend>Чи потрібне вам проживання?</legend><label class="choice"><input type="radio" name="accommodation" value="Так"><span>Так</span></label><label class="choice"><input type="radio" name="accommodation" value="Ні"><span>Ні</span></label></fieldset>
+          </div>
+          <label class="text-field"><span>Ваші побажання</span><textarea name="message" rows="3" placeholder="Напишіть, якщо хочете щось додати"></textarea></label>
+          <button class="button submit-button" type="submit">Надіслати відповідь</button><p class="form-status" role="status"></p>
+        </form>
+      </div>
     </section>
   </main>
 
-  <footer class="photo photo-1"><div class="monogram" aria-label="Никита и Мария"><span class="monogram-letter">N</span><span class="monogram-divider" aria-hidden="true"></span><span class="monogram-letter">M</span></div><p>Дата нашей свадьбы</p><strong class="footer-date">10 · 10 · 2026</strong></footer>
+  <footer class="finale" id="finale">
+    <div class="finale-copy">
+      <p class="finale-script">La Dolce Vita begins here.</p>
+      <strong class="footer-date">10.10.2026</strong>
+      <p>З нетерпінням чекаємо на зустріч.<br>І на наші два незабутні дні разом.</p>
+      <p class="with-love">З любов’ю,<br><span>Нікіта &amp; Марія</span></p>
+    </div>
+  </footer>
   <script src="script.js"></script>
 </body>
 </html>
