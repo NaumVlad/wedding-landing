@@ -75,7 +75,7 @@ time,
 
 .hero-identity {
   top: clamp(130px, 14svh, 185px);
-  left: 50%;
+  left: 36%;
   width: min(90%, 680px);
   text-align: center;
   transform: translateX(-50%);
@@ -554,7 +554,7 @@ time,
 
   .hero-identity {
     top: clamp(125px, 14svh, 180px);
-    left: 50%;
+    left: 35%;
     width: calc(100% - 36px);
   }
 
