@@ -113,15 +113,34 @@
 }
 
 .hero-copy > .eyebrow {
-  position: relative;
-  top: -4px;
-  font-size: 0.75rem;
-  font-weight: 500;
+  margin: 0.5rem 0 0.9rem;
+  font-size: 0.62rem;
+  font-weight: 400;
+  letter-spacing: 0.34em;
 }
 
 .hero-copy .date {
-  margin-bottom: 0;
-  font-size: 2.15rem;
+  margin: 0.9rem 0 0;
+  font-family: "Bodoni Moda", serif;
+  font-size: clamp(1rem, 3vw, 1.35rem);
+  font-weight: 500;
+  letter-spacing: 0.22em;
+}
+
+.hero-copy h1 {
+  margin: 0;
+  font-family: "Bodoni Moda", serif;
+  font-size: clamp(1.05rem, 3.4vw, 1.65rem);
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+}
+
+.hero-copy h1 i {
+  display: inline;
+  margin: 0 0.28em;
+  font: inherit;
 }
 
 .brand,
@@ -132,7 +151,7 @@
   gap: 0.28em;
   border: 0;
   border-radius: 0;
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Bodoni Moda", serif;
   font-weight: 400;
   line-height: 1;
 }
@@ -156,19 +175,59 @@
 }
 
 .monogram-divider {
+  position: relative;
   display: block;
   width: 1px;
   height: 0.92em;
-  background: currentColor;
-  opacity: 0.82;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(255, 255, 255, 0.78) 14%,
+    #fff 50%,
+    rgba(255, 255, 255, 0.78) 86%,
+    transparent
+  );
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.34);
+}
+
+.monogram-divider::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 0 5px 2px rgba(255, 255, 255, 0.52), 0 0 12px 4px rgba(255, 255, 255, 0.22);
+  transform: translate(-50%, -50%);
+}
+
+.hero-monogram {
+  width: auto;
+  height: auto;
+  gap: 0.2em;
+  font-size: clamp(4.6rem, 15vw, 8.8rem);
+  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.18);
+}
+
+.hero-monogram .monogram-divider {
+  height: 0.78em;
 }
 
 .dolce-vita {
   margin: 0.35rem 0 0;
-  font: 500 clamp(0.82rem, 2.4vw, 1.05rem)/1.2 "Cormorant Garamond", serif;
-  letter-spacing: 0.52em;
-  text-transform: uppercase;
-  text-indent: 0.52em;
+  font: 400 clamp(3.2rem, 10vw, 6.6rem)/0.88 Italianno, "Cormorant Garamond", cursive;
+  letter-spacing: 0.01em;
+  text-transform: none;
+  text-indent: 0;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.2);
+}
+
+h2,
+.timeline time,
+.footer-date {
+  font-family: "Bodoni Moda", serif;
 }
 
 footer .monogram {
@@ -248,8 +307,16 @@ footer.photo-1 {
   }
 
   .dolce-vita {
-    letter-spacing: 0.42em;
-    text-indent: 0.42em;
+    font-size: clamp(3rem, 17vw, 4.8rem);
+  }
+
+  .hero-monogram {
+    font-size: clamp(4.4rem, 24vw, 6.6rem);
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(0.88rem, 4.2vw, 1.15rem);
+    letter-spacing: 0.22em;
   }
 
   .hero.photo-1 {
