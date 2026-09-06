@@ -210,20 +210,34 @@ footer p {
 }
 
 .photo.photo-1 {
-  background-image: url("assets/couple.jpg");
+  background-image: url("assets/hero-couple.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: 42% center;
 }
 
 .photo.photo-3 {
-  background-image: url("assets/venue.jpg");
+  background-image: url("assets/sunset-couple.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: center 46%;
 }
 
 .photo.photo-4 {
-  background-image: url("assets/shoes.jpg");
+  background-image: url("assets/portrait-couple.jpg");
   background-size: cover;
+  background-position: center 42%;
+}
+
+.hero::after,
+footer::after {
+  background: linear-gradient(
+    180deg,
+    rgba(25, 19, 14, 0.46),
+    rgba(25, 19, 14, 0.13) 46%,
+    rgba(25, 19, 14, 0.72)
+  );
+}
+
+footer.photo-1 {
   background-position: center;
 }
 
@@ -236,6 +250,14 @@ footer p {
   .dolce-vita {
     letter-spacing: 0.42em;
     text-indent: 0.42em;
+  }
+
+  .hero.photo-1 {
+    background-position: 41% center;
+  }
+
+  .photo.photo-4 {
+    background-position: center 38%;
   }
 
   .details,
