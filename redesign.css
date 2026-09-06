@@ -49,7 +49,8 @@ time,
 
 .photo.photo-1 {
   background-image: url("assets/hero-portrait.jpg");
-  background-position: center;
+  background-size: 135% auto;
+  background-position: right center;
 }
 
 .hero::after {
@@ -58,7 +59,7 @@ time,
 
 .hero-copy {
   position: absolute;
-  top: clamp(118px, 14svh, 170px);
+  top: clamp(190px, 22svh, 260px);
   left: 50%;
   width: 100%;
   max-width: 760px;
@@ -512,11 +513,11 @@ time,
   }
 
   .photo.photo-1 {
-    background-position: center;
+    background-position: right center;
   }
 
   .hero-copy {
-    top: clamp(118px, 12svh, 155px);
+    top: clamp(190px, 21svh, 235px);
     padding: 0 18px;
   }
 
