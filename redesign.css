@@ -74,8 +74,8 @@ time,
 }
 
 .hero-identity {
-  top: clamp(130px, 14svh, 185px);
-  left: 36%;
+  top: clamp(170px, 18svh, 235px);
+  left: 32%;
   width: min(90%, 680px);
   text-align: center;
   transform: translateX(-50%);
@@ -83,7 +83,7 @@ time,
 
 .hero-motto {
   top: clamp(330px, 32svh, 440px);
-  left: 0;
+  left: -4vw;
   width: min(72vw, 560px);
   text-align: center;
 }
@@ -553,14 +553,14 @@ time,
   }
 
   .hero-identity {
-    top: clamp(125px, 14svh, 180px);
-    left: 35%;
+    top: clamp(165px, 18svh, 225px);
+    left: 31%;
     width: calc(100% - 36px);
   }
 
   .hero-motto {
     top: clamp(310px, 28svh, 400px);
-    left: -3vw;
+    left: -7vw;
     width: 76vw;
   }
 
