@@ -112,19 +112,17 @@
   font-weight: 700;
 }
 
-.hero-copy > .eyebrow {
-  margin: 0.5rem 0 0.9rem;
-  font-size: 0.62rem;
-  font-weight: 400;
-  letter-spacing: 0.34em;
-}
-
 .hero-copy .date {
   margin: 0.9rem 0 0;
   font-family: "Bodoni Moda", serif;
   font-size: clamp(1rem, 3vw, 1.35rem);
   font-weight: 500;
   letter-spacing: 0.22em;
+}
+
+.hero > .scroll {
+  z-index: 1;
+  bottom: clamp(78px, 8svh, 112px);
 }
 
 .hero-copy h1 {
