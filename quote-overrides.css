@@ -221,7 +221,7 @@
 
 .dolce-vita {
   margin: 0.35rem 0 0;
-  font: 400 clamp(3.2rem, 10vw, 6.6rem)/0.88 Italianno, "Cormorant Garamond", cursive;
+  font: 400 clamp(2.6rem, 8vw, 5.3rem)/0.88 Italianno, "Cormorant Garamond", cursive;
   color: rgba(255, 255, 255, 0.93);
   letter-spacing: 0.01em;
   text-transform: none;
@@ -313,7 +313,7 @@ footer.photo-1 {
   }
 
   .dolce-vita {
-    font-size: clamp(3rem, 17vw, 4.8rem);
+    font-size: clamp(2.5rem, 13vw, 3.8rem);
   }
 
   .hero-monogram {

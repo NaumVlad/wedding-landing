@@ -82,7 +82,7 @@ time,
 }
 
 .hero-motto {
-  top: clamp(390px, 39svh, 520px);
+  top: clamp(350px, 34svh, 460px);
   left: clamp(28px, 7vw, 120px);
   width: min(72vw, 560px);
   text-align: left;
@@ -557,7 +557,7 @@ time,
   }
 
   .hero-motto {
-    top: clamp(380px, 35svh, 480px);
+    top: clamp(330px, 30svh, 420px);
     left: 6vw;
     width: 76vw;
   }
