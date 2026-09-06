@@ -60,7 +60,7 @@ time,
 .hero-copy {
   position: absolute;
   top: clamp(190px, 22svh, 260px);
-  left: 50%;
+  left: 44%;
   width: 100%;
   max-width: 760px;
   padding: 0 20px;
@@ -522,6 +522,7 @@ time,
 
   .hero-copy {
     top: clamp(260px, 29svh, 390px);
+    left: 43%;
     padding: 0 18px;
     transform: translate(-50%, -50%);
   }
