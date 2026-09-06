@@ -115,7 +115,7 @@
 .hero-copy .date {
   margin: 0.9rem 0 0;
   font-family: "Bodoni Moda", serif;
-  font-size: clamp(1rem, 3vw, 1.35rem);
+  font-size: clamp(calc(1rem + 2px), calc(3vw + 2px), calc(1.35rem + 2px));
   font-weight: 500;
   letter-spacing: 0.22em;
 }
