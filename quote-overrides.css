@@ -215,8 +215,8 @@
 
 .dolce-vita {
   margin: 0.35rem 0 0;
-  font: 400 clamp(3.2rem, 10vw, 6.6rem)/0.88 Italianno, "Cormorant Garamond", cursive;
-  color: rgba(255, 255, 255, 0.93);
+  font: 400 clamp(3.2rem, 10vw, 6.6rem)/0.88 "Mrs Saint Delafield", Italianno, cursive;
+  color: rgba(255, 255, 255, 0.91);
   letter-spacing: 0.01em;
   text-transform: none;
   text-indent: 0;
