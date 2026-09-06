@@ -85,11 +85,12 @@ time,
   top: clamp(330px, 32svh, 440px);
   left: clamp(28px, 7vw, 120px);
   width: min(72vw, 560px);
-  text-align: left;
+  text-align: center;
 }
 
 .hero-motto .date {
-  margin-left: 12%;
+  margin-top: 0.25rem;
+  margin-left: 0;
 }
 
 .hero-note,
@@ -564,7 +565,7 @@ time,
   }
 
   .hero-motto .date {
-    margin-left: 14%;
+    margin-left: 0;
   }
 
   .hero-note {
