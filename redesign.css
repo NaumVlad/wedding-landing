@@ -518,8 +518,9 @@ time,
   }
 
   .hero-copy {
-    top: clamp(190px, 21svh, 235px);
+    top: clamp(260px, 29svh, 390px);
     padding: 0 18px;
+    transform: translate(-50%, -50%);
   }
 
   .hero-note {
