@@ -100,6 +100,11 @@
               <input id="attendance-custom-text" type="text" name="attendance_custom" placeholder="Ваш вариант ответа" disabled>
             </label>
           </fieldset>
+          <div class="form-options-grid">
+            <fieldset class="choice-list compact-choices"><legend>Чи потрібне вам проживання?</legend><label class="choice"><input type="radio" name="accommodation" value="Так"><span>Так</span></label><label class="choice"><input type="radio" name="accommodation" value="Ні"><span>Ні</span></label></fieldset>
+            <fieldset class="choice-list compact-choices"><legend>Чи потрібен вам трансфер?</legend><label class="choice"><input type="radio" name="transfer" value="Так"><span>Так</span></label><label class="choice"><input type="radio" name="transfer" value="Ні"><span>Ні</span></label></fieldset>
+          </div>
+          <label class="text-field"><span>Ваші побажання</span><textarea name="message" rows="3" placeholder="Напишіть, якщо хочете щось додати"></textarea></label>
           <fieldset class="choice-list" aria-required="true">
             <legend>Що б ви хотіли пити? <b class="required-mark">*</b></legend>
             <p class="choice-hint">Можна обрати декілька варіантів</p>
@@ -109,11 +114,6 @@
             <label class="choice"><input type="checkbox" name="drinks" value="Шампанське"><span>Шампанське</span></label>
             <label class="choice"><input type="checkbox" name="drinks" value="Без алкоголю"><span>Без алкоголю</span></label>
           </fieldset>
-          <div class="form-options-grid">
-            <fieldset class="choice-list compact-choices"><legend>Чи потрібен вам трансфер?</legend><label class="choice"><input type="radio" name="transfer" value="Так"><span>Так</span></label><label class="choice"><input type="radio" name="transfer" value="Ні"><span>Ні</span></label></fieldset>
-            <fieldset class="choice-list compact-choices"><legend>Чи потрібне вам проживання?</legend><label class="choice"><input type="radio" name="accommodation" value="Так"><span>Так</span></label><label class="choice"><input type="radio" name="accommodation" value="Ні"><span>Ні</span></label></fieldset>
-          </div>
-          <label class="text-field"><span>Ваші побажання</span><textarea name="message" rows="3" placeholder="Напишіть, якщо хочете щось додати"></textarea></label>
           <button class="button submit-button" type="submit">Надіслати відповідь</button><p class="form-status" role="status"></p>
         </form>
       </div>
