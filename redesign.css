@@ -855,6 +855,13 @@ time,
     padding: 42px 0 48px;
   }
 
+  .location-inner > .section-kicker {
+    font-size: 1.35rem;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+    -webkit-text-stroke: 0.55px currentColor;
+  }
+
   .location-card {
     padding: 26px 20px 28px;
   }
