@@ -74,23 +74,35 @@ time,
 }
 
 .hero-identity {
-  top: clamp(170px, 18svh, 235px);
-  left: 32%;
+  top: clamp(28px, 5svh, 64px);
+  left: 50%;
   width: min(90%, 680px);
   text-align: center;
   transform: translateX(-50%);
 }
 
+.hero-monogram {
+  font-size: clamp(3.2rem, 7vw, 5.2rem);
+}
+
+.hero-copy h1 {
+  margin-top: 7px;
+  font-size: clamp(1.7rem, 4vw, 2.8rem);
+  line-height: 1.05;
+}
+
 .hero-motto {
-  top: clamp(330px, 32svh, 440px);
-  left: -4vw;
-  width: min(72vw, 560px);
+  top: clamp(165px, 24svh, 270px);
+  left: 50%;
+  width: min(94%, 680px);
   text-align: center;
+  transform: translateX(-50%);
 }
 
 .hero-motto .date {
-  margin-top: 0.25rem;
+  margin-top: 0.12rem;
   margin-left: 0;
+  font-size: clamp(1rem, 2.3vw, 1.35rem);
 }
 
 .photo-note,
@@ -769,20 +781,31 @@ time,
   }
 
   .hero-identity {
-    top: clamp(153px, 17svh, 213px);
-    left: 31%;
-    width: calc(100% - 36px);
+    top: calc(24px + env(safe-area-inset-top));
+    left: 50%;
+    width: calc(100% - 28px);
+  }
+
+  .hero-monogram {
+    font-size: clamp(3.45rem, 15vw, 4rem);
+  }
+
+  .hero-copy h1 {
+    margin-top: 6px;
+    font-size: clamp(1.65rem, 7vw, 2rem);
+    letter-spacing: 0.2em;
   }
 
   .hero-motto {
-    top: clamp(265px, 33svh, 300px);
-    left: -7vw;
-    width: 76vw;
+    top: calc(150px + env(safe-area-inset-top));
+    left: 50%;
+    width: calc(100% - 24px);
   }
 
   .hero-motto .date {
-    margin-top: -0.1rem;
+    margin-top: 0;
     margin-left: 0;
+    font-size: clamp(1rem, 4vw, 1.15rem);
   }
 
   .hero > .scroll {
@@ -943,65 +966,5 @@ time,
     font-weight: 400;
     line-height: 1;
     transform: translateY(-0.06em);
-  }
-}
-
-/* Точная композиция для высоких экранов iPhone 12 Pro — iPhone 14 Pro Max. */
-@media (min-width: 375px) and (max-width: 450px) and (min-aspect-ratio: 43 / 100) and (max-aspect-ratio: 1 / 2) {
-  .hero {
-    min-height: 100svh;
-    height: 100dvh;
-  }
-
-  .photo.photo-1 {
-    background-size: cover;
-    background-position: center 45%;
-  }
-
-  .brand {
-    height: 52px;
-    font-size: 2.45rem;
-  }
-
-  .hero-identity {
-    top: clamp(138px, 17svh, 166px);
-    left: 31%;
-    width: calc(100% - 32px);
-  }
-
-  .hero-monogram {
-    font-size: clamp(4.65rem, 20vw, 5.35rem);
-  }
-
-  .hero-copy h1 {
-    font-size: clamp(0.92rem, 4.1vw, 1.08rem);
-  }
-
-  .hero-motto {
-    top: clamp(265px, 29svh, 285px);
-    left: -7vw;
-    width: 76vw;
-  }
-
-  .dolce-vita {
-    font-size: clamp(3rem, 13vw, 3.55rem);
-  }
-
-  .hero > .scroll {
-    bottom: calc(10px + env(safe-area-inset-bottom));
-  }
-}
-
-/* Композиция iPhone 14 Pro Max с учетом разной высоты окна Safari и Telegram. */
-@media (min-width: 414px) and (max-width: 440px) {
-  .hero-identity {
-    top: clamp(133px, 17.5svh, 166px);
-    left: 31%;
-  }
-
-  .hero-motto {
-    top: clamp(260px, 34svh, 320px);
-    left: -7vw;
-    width: 76vw;
   }
 }
