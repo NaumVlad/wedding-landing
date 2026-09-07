@@ -75,7 +75,7 @@ time,
 }
 
 .hero-identity {
-  top: clamp(126px, 17svh, 194px);
+  top: clamp(114px, 15.5svh, 182px);
   left: 50%;
   width: min(90%, 680px);
   text-align: center;
@@ -791,7 +791,7 @@ time,
   }
 
   .hero-identity {
-    top: calc(134px + env(safe-area-inset-top));
+    top: calc(119px + env(safe-area-inset-top));
     left: 50%;
     width: calc(100% - 28px);
   }
