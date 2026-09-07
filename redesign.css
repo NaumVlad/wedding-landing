@@ -900,14 +900,15 @@ time,
   }
 
   .finale-script {
-    margin-bottom: 10px;
-    font-size: clamp(1.9rem, 8.4vw, 2.25rem);
+    margin-bottom: 14px;
+    font-size: clamp(2.1rem, 9.4vw, 2.6rem);
     line-height: 1.04;
+    white-space: nowrap;
   }
 
   .finale .footer-date {
-    margin-bottom: 12px;
-    font-size: clamp(1.8rem, 7.8vw, 2.15rem);
+    margin-bottom: 8px;
+    font-size: clamp(1.55rem, 6.8vw, 1.85rem);
   }
 
   .finale-copy > p:not(.finale-script, .with-love) {
@@ -917,7 +918,7 @@ time,
   }
 
   .with-love {
-    margin-top: 12px;
+    margin-top: 4px;
     font-size: 1.35rem;
     line-height: 1.05;
   }
@@ -925,6 +926,16 @@ time,
   .with-love span {
     font-size: clamp(2rem, 8.5vw, 2.4rem);
     line-height: 1;
+  }
+
+  .with-love .with-love-ampersand {
+    display: inline-block;
+    margin-inline: 0.08em;
+    font-family: "Bodoni Moda", serif;
+    font-size: 0.68em;
+    font-weight: 400;
+    line-height: 1;
+    transform: translateY(-0.06em);
   }
 }
 
