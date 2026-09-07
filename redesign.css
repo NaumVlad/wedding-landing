@@ -872,6 +872,10 @@ time,
     padding: 20px 14px;
   }
 
+  .rsvp-section {
+    padding-bottom: 42px;
+  }
+
   .finale {
     align-items: flex-start;
     justify-content: center;
