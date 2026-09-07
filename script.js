@@ -16,15 +16,7 @@ const browserHintClose = browserHint?.querySelector(".browser-hint-close");
 const browserHintText = browserHint?.querySelector("#browser-hint-text");
 const mobileDevice = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
 const androidDevice = /Android/i.test(navigator.userAgent);
-const telegramReferrer = /(^|\.)((t|telegram)\.me|telegram\.org)$/i.test((() => {
-  try {
-    return new URL(document.referrer).hostname;
-  } catch {
-    return "";
-  }
-})());
 const telegramBrowser = /Telegram/i.test(navigator.userAgent)
-  || telegramReferrer
   || Boolean(window.TelegramWebviewProxy)
   || Boolean(window.Telegram?.WebApp?.initData)
   || /(?:^|[?#&])tgWebAppPlatform=/i.test(`${location.search}${location.hash}`);
