@@ -561,13 +561,13 @@ time,
   }
 
   .hero-identity {
-    top: clamp(165px, 18svh, 225px);
+    top: clamp(115px, 13svh, 165px);
     left: 31%;
     width: calc(100% - 36px);
   }
 
   .hero-motto {
-    top: clamp(310px, 28svh, 400px);
+    top: clamp(235px, 23svh, 300px);
     left: -7vw;
     width: 76vw;
   }
@@ -677,7 +677,7 @@ time,
 }
 
 /* Точная композиция для высоких экранов iPhone 12 Pro — iPhone 14 Pro Max. */
-@media (min-width: 375px) and (max-width: 450px) and (min-aspect-ratio: 43 / 100) and (max-aspect-ratio: 1 / 2) {
+@media (min-width: 375px) and (max-width: 450px) and (min-aspect-ratio: 43 / 100) and (max-aspect-ratio: 31 / 50) {
   .hero {
     min-height: 100svh;
     height: 100svh;
@@ -694,7 +694,7 @@ time,
   }
 
   .hero-identity {
-    top: clamp(150px, 18.5svh, 178px);
+    top: clamp(110px, 13.5svh, 145px);
     left: 31%;
     width: calc(100% - 32px);
   }
@@ -708,7 +708,7 @@ time,
   }
 
   .hero-motto {
-    top: clamp(282px, 34.5svh, 325px);
+    top: clamp(230px, 26svh, 275px);
     left: -7vw;
     width: 76vw;
   }
