@@ -319,13 +319,16 @@ time,
 
 .details-note {
   position: absolute;
-  left: 7vw;
-  top: 50%;
+  right: 6vw;
+  bottom: clamp(36px, 6vw, 80px);
+  left: auto;
+  top: auto;
   margin: 0;
   color: rgba(255, 255, 255, 0.88);
   font-size: clamp(2.7rem, 6vw, 5.2rem);
   line-height: 0.82;
-  transform: translateY(-50%) rotate(-5deg);
+  text-align: right;
+  transform: rotate(-5deg);
 }
 
 .details-section {
@@ -628,8 +631,9 @@ time,
 
   .details-note {
     top: auto;
-    left: 22px;
-    bottom: 44px;
+    right: 20px;
+    bottom: 36px;
+    left: auto;
     font-size: 3.25rem;
     transform: rotate(-5deg);
   }
