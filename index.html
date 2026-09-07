@@ -87,13 +87,11 @@
             <label class="choice"><input type="radio" name="attendance" value="Так, із радістю" required><span>Так, із радістю</span></label>
             <label class="choice"><input id="attendance-couple" data-party="couple" type="radio" name="attendance" value="Буду с дружиною / чоловіком"><span>Буду с дружиною / чоловіком</span></label>
             <div class="party-details" data-party-details="couple" hidden>
-              <label class="party-size-field"><span>Кількість людей <b class="required-mark">*</b></span><input class="party-size" type="number" name="party_size" min="2" max="10" value="2" required disabled></label>
-              <div class="party-names" aria-live="polite"></div>
+              <label class="party-name-field"><span>Ім’я дружини / чоловіка <b class="required-mark">*</b></span><input type="text" name="partner_name" placeholder="Ім’я та прізвище" required disabled></label>
             </div>
             <label class="choice"><input id="attendance-family" data-party="family" type="radio" name="attendance" value="Буде вся сім’я"><span>Буде вся сім’я</span></label>
             <div class="party-details" data-party-details="family" hidden>
               <label class="party-size-field"><span>Кількість людей <b class="required-mark">*</b></span><input class="party-size" type="number" name="party_size" min="2" max="10" value="3" required disabled></label>
-              <div class="party-names" aria-live="polite"></div>
             </div>
             <label class="choice"><input type="radio" name="attendance" value="На жаль, ні"><span>На жаль, ні</span></label>
             <label class="choice"><input id="attendance-custom" type="radio" name="attendance" value="Напишите свой вариант"><span>Напишите свой вариант</span></label>

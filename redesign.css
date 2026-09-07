@@ -624,11 +624,6 @@ time,
   text-transform: none;
 }
 
-.party-names {
-  display: grid;
-  gap: 14px;
-}
-
 .form-options-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
