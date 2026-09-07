@@ -717,6 +717,16 @@ time,
     padding: 44px 0;
   }
 
+  .program-section {
+    padding-top: 48px;
+  }
+
+  .program-section .section-inner > h2 {
+    font-size: clamp(1.9rem, 7.5vw, 2.15rem);
+    letter-spacing: -0.02em;
+    white-space: nowrap;
+  }
+
   .floral-intro {
     left: -2vw;
     bottom: -6vw;
