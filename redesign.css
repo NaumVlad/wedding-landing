@@ -252,7 +252,9 @@ time,
 
 .day-card > header span,
 .day-card > header p {
+  display: block;
   font-size: 0.62rem;
+  line-height: 1;
   letter-spacing: 0.2em;
   text-transform: uppercase;
 }
@@ -910,6 +912,18 @@ time,
 
   .day-card > header {
     gap: 10px;
+  }
+
+  .day-one > header span,
+  .day-one > header p {
+    font-weight: 700;
+    opacity: 1;
+    -webkit-text-stroke: 0.2px currentColor;
+  }
+
+  .day-one > header p {
+    letter-spacing: 0.12em;
+    text-transform: none;
   }
 
   .schedule-list li {
