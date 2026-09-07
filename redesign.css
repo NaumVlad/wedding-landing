@@ -448,6 +448,12 @@ time,
   white-space: nowrap;
 }
 
+.rsvp-ampersand {
+  display: inline-block;
+  font-size: 0.7em;
+  transform: translateY(-0.04em);
+}
+
 .rsvp-inner > .section-kicker {
   font-size: 0.58rem;
   letter-spacing: 0.28em;
