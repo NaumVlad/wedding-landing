@@ -891,7 +891,7 @@ time,
 
   .marry-line {
     margin: 30px 0 0;
-    font-size: clamp(1.4rem, 6.7vw, 2.2rem);
+    font-size: clamp(1.35rem, 6.2vw, 2.05rem);
     letter-spacing: 0.1em;
   }
 
