@@ -1000,7 +1000,7 @@ time,
 
   .finale-monogram {
     align-self: center;
-    font-size: clamp(2.65rem, 12vw, 3.25rem);
+    font-size: clamp(2.35rem, 10.5vw, 2.9rem);
   }
 
   .finale-monogram .monogram-letter {
@@ -1008,7 +1008,7 @@ time,
   }
 
   .finale-title {
-    margin: 20px 0 2px;
+    margin: 14px 0 2px;
     font-size: clamp(2rem, 8.6vw, 2.55rem);
     line-height: 1;
     letter-spacing: 0.06em;
