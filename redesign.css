@@ -910,6 +910,11 @@ time,
     padding: 38px 24px 44px;
   }
 
+  .day-one {
+    margin-top: -10px;
+    padding-top: 42px;
+  }
+
   .day-card > header {
     gap: 10px;
   }
