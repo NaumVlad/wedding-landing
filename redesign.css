@@ -568,7 +568,7 @@ time,
   }
 
   .hero-identity {
-    top: clamp(165px, 18svh, 225px);
+    top: clamp(153px, 17svh, 213px);
     left: 31%;
     width: calc(100% - 36px);
   }
@@ -580,6 +580,7 @@ time,
   }
 
   .hero-motto .date {
+    margin-top: -0.1rem;
     margin-left: 0;
   }
 
@@ -701,7 +702,7 @@ time,
   }
 
   .hero-identity {
-    top: clamp(150px, 18.5svh, 178px);
+    top: clamp(138px, 17svh, 166px);
     left: 31%;
     width: calc(100% - 32px);
   }
@@ -732,7 +733,7 @@ time,
 /* Композиция iPhone 14 Pro Max с учетом разной высоты окна Safari и Telegram. */
 @media (min-width: 414px) and (max-width: 440px) {
   .hero-identity {
-    top: clamp(145px, 19svh, 178px);
+    top: clamp(133px, 17.5svh, 166px);
     left: 31%;
   }
 
