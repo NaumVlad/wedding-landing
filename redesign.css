@@ -500,6 +500,30 @@ time,
   margin: -18px 0 48px;
 }
 
+.gift-note-card {
+  margin: 8px auto 46px;
+  padding: 32px 34px;
+  border: 1px solid rgba(68, 90, 102, 0.24);
+  background: rgba(253, 251, 247, 0.82);
+  box-shadow: 0 16px 42px rgba(54, 75, 85, 0.08);
+  text-align: center;
+}
+
+.gift-note-card p {
+  max-width: 590px;
+  margin: 0 auto;
+  font-size: clamp(1rem, 2.2vw, 1.2rem);
+  font-weight: 500;
+  line-height: 1.65;
+}
+
+.guest-form-title {
+  margin: 0 0 28px;
+  font: 400 clamp(2.4rem, 6vw, 4rem)/1 "Bodoni Moda", serif;
+  letter-spacing: -0.025em;
+  text-align: center;
+}
+
 .rsvp-section form {
   display: grid;
   gap: 28px;
@@ -968,7 +992,24 @@ time,
     padding-bottom: 42px;
   }
 
+  .gift-note-card {
+    margin: 4px 0 38px;
+    padding: 26px 22px;
+    border-radius: 2px;
+  }
+
+  .gift-note-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .guest-form-title {
+    margin-bottom: 18px;
+    font-size: clamp(2.25rem, 10vw, 2.8rem);
+  }
+
   .rsvp-deadline {
+    margin: 0 0 40px;
     color: #99565b;
     font-weight: 600;
   }

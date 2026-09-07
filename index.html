@@ -79,6 +79,10 @@
       <div class="section-inner rsvp-inner">
         <p class="section-kicker">Нам важливе ваше рішення</p>
         <h2>Побажання <span class="rsvp-ampersand">&amp;</span> Деталі</h2>
+        <div class="gift-note-card">
+          <p>Будемо вдячні, якщо замість квітів подаруєте корм для тварин.</p>
+        </div>
+        <h3 class="guest-form-title">Анкета гостя</h3>
         <p class="rsvp-deadline">Будь ласка, підтвердьте присутність до <strong>15.09.2026</strong></p>
         <form id="rsvp-form">
           <label class="text-field"><span>Ваше ім’я <b class="required-mark">*</b></span><input name="name" required placeholder="Ім’я та прізвище"></label>
@@ -101,10 +105,9 @@
             </label>
           </fieldset>
           <div class="form-options-grid">
-            <fieldset class="choice-list compact-choices"><legend>Чи потрібне вам проживання?</legend><label class="choice"><input type="radio" name="accommodation" value="Так"><span>Так</span></label><label class="choice"><input type="radio" name="accommodation" value="Ні"><span>Ні</span></label></fieldset>
-            <fieldset class="choice-list compact-choices"><legend>Чи потрібен вам трансфер?</legend><label class="choice"><input type="radio" name="transfer" value="Так"><span>Так</span></label><label class="choice"><input type="radio" name="transfer" value="Ні"><span>Ні</span></label></fieldset>
+            <fieldset class="choice-list compact-choices"><legend>Вам потрібне проживання?</legend><label class="choice"><input type="radio" name="accommodation" value="Так"><span>Так</span></label><label class="choice"><input type="radio" name="accommodation" value="Ні"><span>Ні</span></label></fieldset>
+            <fieldset class="choice-list compact-choices"><legend>Вам потрібен трансфер?</legend><label class="choice"><input type="radio" name="transfer" value="Так"><span>Так</span></label><label class="choice"><input type="radio" name="transfer" value="Ні"><span>Ні</span></label></fieldset>
           </div>
-          <label class="text-field"><span>Ваші побажання</span><textarea name="message" rows="3" placeholder="Напишіть, якщо хочете щось додати"></textarea></label>
           <fieldset class="choice-list" aria-required="true">
             <legend>Що б ви хотіли пити? <b class="required-mark">*</b></legend>
             <p class="choice-hint">Можна обрати декілька варіантів</p>
@@ -114,6 +117,7 @@
             <label class="choice"><input type="checkbox" name="drinks" value="Шампанське"><span>Шампанське</span></label>
             <label class="choice"><input type="checkbox" name="drinks" value="Без алкоголю"><span>Без алкоголю</span></label>
           </fieldset>
+          <label class="text-field"><span>Ваші побажання</span><textarea name="message" rows="3" placeholder="Напишіть, якщо хочете щось додати"></textarea></label>
           <button class="button submit-button" type="submit">Надіслати відповідь</button><p class="form-status" role="status"></p>
         </form>
       </div>
