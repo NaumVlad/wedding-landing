@@ -11,6 +11,46 @@ links?.addEventListener("click", () => {
   menu?.setAttribute("aria-expanded", "false");
 });
 
+const browserHint = document.querySelector("#browser-hint");
+const browserHintClose = browserHint?.querySelector(".browser-hint-close");
+const browserHintText = browserHint?.querySelector("#browser-hint-text");
+const mobileDevice = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+const androidDevice = /Android/i.test(navigator.userAgent);
+
+const closeBrowserHint = () => {
+  browserHint?.classList.remove("is-open");
+  window.setTimeout(() => {
+    if (browserHint) {
+      browserHint.hidden = true;
+      browserHint.classList.remove("is-visible");
+    }
+  }, 240);
+};
+
+if (browserHint && mobileDevice) {
+  if (androidDevice) {
+    browserHint.classList.add("is-android");
+    browserHintText.innerHTML = "Натисніть меню вгорі праворуч<br>і оберіть відкриття у браузері";
+  }
+
+  window.setTimeout(() => {
+    browserHint.hidden = false;
+    browserHint.classList.add("is-visible");
+    window.requestAnimationFrame(() => browserHint.classList.add("is-open"));
+  }, 700);
+}
+
+browserHintClose?.addEventListener("click", closeBrowserHint);
+browserHint?.addEventListener("click", event => {
+  if (event.target === browserHint) closeBrowserHint();
+});
+
+document.addEventListener("keydown", event => {
+  if (event.key === "Escape" && browserHint?.classList.contains("is-open")) {
+    closeBrowserHint();
+  }
+});
+
 const form = document.querySelector("#rsvp-form");
 const drinkInputs = [...document.querySelectorAll('input[name="drinks"]')];
 
