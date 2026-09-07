@@ -921,6 +921,8 @@ time,
 
   .day-one > header span,
   .day-one > header p {
+    position: relative;
+    top: -9px;
     font-weight: 700;
     opacity: 1;
     -webkit-text-stroke: 0.2px currentColor;
