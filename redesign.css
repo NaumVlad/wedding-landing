@@ -160,6 +160,8 @@ time,
   max-width: 610px;
   margin-inline: auto;
   font-size: clamp(1rem, 2vw, 1.2rem);
+  font-weight: 400;
+  text-shadow: 0 0 2px rgba(253, 251, 247, 1), 0 0 7px rgba(253, 251, 247, 0.92);
 }
 
 .marry-line {
@@ -167,6 +169,7 @@ time,
   font: 500 clamp(1.25rem, 3vw, 1.8rem) "Bodoni Moda", serif;
   letter-spacing: 0.24em;
   text-transform: uppercase;
+  text-shadow: 0 0 2px rgba(253, 251, 247, 1), 0 0 7px rgba(253, 251, 247, 0.92);
 }
 
 .handwritten-note {
