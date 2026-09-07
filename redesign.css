@@ -143,10 +143,10 @@ time,
 
 .invitation-copy h2 {
   margin-bottom: 30px;
-  font-family: "Cormorant Garamond", serif;
-  font-size: clamp(3.15rem, 7.5vw, 5.2rem);
-  font-weight: 500;
-  line-height: 0.82;
+  font-family: "Bodoni Moda", "Times New Roman", serif;
+  font-size: clamp(2.8rem, 7vw, 5.6rem);
+  font-weight: 400;
+  line-height: 0.93;
   letter-spacing: -0.035em;
   text-transform: none;
 }
@@ -593,7 +593,7 @@ time,
 
   .invitation-copy h2 {
     margin-bottom: 26px;
-    font-size: clamp(3rem, 14vw, 4.15rem);
+    font-size: clamp(2.8rem, 13vw, 3.9rem);
   }
 
   .invitation-copy {
