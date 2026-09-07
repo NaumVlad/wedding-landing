@@ -884,7 +884,7 @@ time,
 
   .finale {
     align-items: flex-start;
-    justify-content: center;
+    justify-content: flex-start;
     padding: calc(18px + env(safe-area-inset-top)) 18px 24px;
     background-position: 60% center;
     text-align: center;
