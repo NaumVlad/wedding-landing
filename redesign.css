@@ -197,7 +197,7 @@ time,
 
 .marry-line {
   margin: 26px 0 0;
-  font: 600 clamp(2rem, 5.8vw, 4rem) "Bodoni Moda", serif;
+  font: 600 clamp(1.9rem, 5.3vw, 3.7rem) "Bodoni Moda", serif;
   line-height: 1;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -877,7 +877,7 @@ time,
 
   .marry-line {
     margin: 22px 0 0;
-    font-size: clamp(1.45rem, 7.3vw, 2.35rem);
+    font-size: clamp(1.4rem, 6.7vw, 2.2rem);
     letter-spacing: 0.1em;
   }
 
