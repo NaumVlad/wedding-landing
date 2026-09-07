@@ -864,6 +864,16 @@ time,
     padding-bottom: 42px;
   }
 
+  .rsvp-deadline {
+    color: #99565b;
+    font-weight: 600;
+  }
+
+  .rsvp-deadline strong {
+    color: inherit;
+    font-weight: 800;
+  }
+
   .finale {
     align-items: flex-start;
     justify-content: flex-start;
