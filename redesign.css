@@ -650,3 +650,49 @@ time,
     max-width: 400px;
   }
 }
+
+/* Точная композиция для высоких экранов iPhone 12 Pro — iPhone 14 Pro Max. */
+@media (min-width: 375px) and (max-width: 450px) and (min-aspect-ratio: 43 / 100) and (max-aspect-ratio: 1 / 2) {
+  .hero {
+    min-height: 100svh;
+    height: 100svh;
+  }
+
+  .photo.photo-1 {
+    background-size: cover;
+    background-position: center 45%;
+  }
+
+  .brand {
+    height: 52px;
+    font-size: 2.45rem;
+  }
+
+  .hero-identity {
+    top: clamp(150px, 18.5svh, 178px);
+    left: 31%;
+    width: calc(100% - 32px);
+  }
+
+  .hero-monogram {
+    font-size: clamp(4.65rem, 20vw, 5.35rem);
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(0.92rem, 4.1vw, 1.08rem);
+  }
+
+  .hero-motto {
+    top: clamp(282px, 34.5svh, 325px);
+    left: -7vw;
+    width: 76vw;
+  }
+
+  .dolce-vita {
+    font-size: clamp(3rem, 13vw, 3.55rem);
+  }
+
+  .hero > .scroll {
+    bottom: calc(10px + env(safe-area-inset-bottom));
+  }
+}
