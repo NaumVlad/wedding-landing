@@ -95,7 +95,11 @@
             <label class="choice"><input type="radio" name="attendance" value="Так, я буду +1"><span>Так, я буду +1</span></label>
             <label class="choice"><input type="radio" name="attendance" value="Так, я буду +2"><span>Так, я буду +2</span></label>
             <label class="choice"><input type="radio" name="attendance" value="На жаль, ні"><span>На жаль, ні</span></label>
-            <label class="choice"><input type="radio" name="attendance" value="Свій варіант"><span>Свій варіант</span></label>
+            <label class="choice"><input id="attendance-custom" type="radio" name="attendance" value="Свій варіант"><span>Свій варіант</span></label>
+            <label class="custom-attendance-field" for="attendance-custom-text" hidden>
+              <span>Напишіть свій варіант</span>
+              <input id="attendance-custom-text" type="text" name="attendance_custom" placeholder="Ваш варіант відповіді" disabled>
+            </label>
           </fieldset>
           <fieldset class="choice-list" aria-required="true">
             <legend>Що б ви хотіли пити? <b class="required-mark">*</b></legend>

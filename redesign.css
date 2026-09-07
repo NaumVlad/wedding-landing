@@ -517,6 +517,32 @@ time,
   accent-color: var(--blue-dark);
 }
 
+.custom-attendance-field {
+  display: grid;
+  gap: 8px;
+  margin: 12px 0 2px;
+  color: var(--soft-ink);
+  font-size: 0.62rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.custom-attendance-field[hidden] {
+  display: none;
+}
+
+.custom-attendance-field input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: rgba(253, 251, 247, 0.72);
+  color: var(--ink);
+  font: 400 0.9rem Montserrat, sans-serif;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
 .form-options-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));

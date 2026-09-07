@@ -57,6 +57,23 @@ document.addEventListener("keydown", event => {
 
 const form = document.querySelector("#rsvp-form");
 const drinkInputs = [...document.querySelectorAll('input[name="drinks"]')];
+const attendanceInputs = [...document.querySelectorAll('input[name="attendance"]')];
+const customAttendance = document.querySelector("#attendance-custom");
+const customAttendanceField = document.querySelector(".custom-attendance-field");
+const customAttendanceText = document.querySelector("#attendance-custom-text");
+
+const syncCustomAttendance = () => {
+  const active = Boolean(customAttendance?.checked);
+
+  if (customAttendanceField) customAttendanceField.hidden = !active;
+  if (customAttendanceText) {
+    customAttendanceText.disabled = !active;
+    customAttendanceText.required = active;
+  }
+};
+
+attendanceInputs.forEach(input => input.addEventListener("change", syncCustomAttendance));
+syncCustomAttendance();
 
 drinkInputs.forEach(input => input.addEventListener("change", () => {
   drinkInputs[0]?.setCustomValidity("");
@@ -78,4 +95,5 @@ form?.addEventListener("submit", event => {
 
   document.querySelector(".form-status").textContent = "Дякуємо! Вашу відповідь збережено на цьому пристрої.";
   form.reset();
+  syncCustomAttendance();
 });
