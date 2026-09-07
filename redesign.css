@@ -88,6 +88,11 @@ time,
   font-size: clamp(2.8rem, 5vw, 3.6rem);
 }
 
+.hero-monogram .monogram-letter {
+  font-weight: 400;
+  -webkit-text-stroke-width: 0.5px;
+}
+
 .hero-copy h1 {
   margin-top: 0;
   font-size: clamp(1.9rem, 4.4vw, 3.1rem);
