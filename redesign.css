@@ -67,14 +67,15 @@ time,
 }
 
 .hero-identity,
-.hero-motto {
+.hero-motto,
+.hero-monogram {
   position: absolute;
   z-index: 1;
   filter: drop-shadow(2px 2px 0 rgba(0, 0, 0, 0.5)) drop-shadow(4px 5px 7px rgba(0, 0, 0, 0.35));
 }
 
 .hero-identity {
-  top: clamp(68px, 9svh, 104px);
+  top: clamp(126px, 17svh, 194px);
   left: 50%;
   width: min(90%, 680px);
   text-align: center;
@@ -82,12 +83,14 @@ time,
 }
 
 .hero-monogram {
-  font-size: clamp(3.2rem, 7vw, 5.2rem);
+  top: clamp(20px, 3svh, 36px);
+  left: clamp(20px, 4vw, 56px);
+  font-size: clamp(2.8rem, 5vw, 3.6rem);
 }
 
 .hero-copy h1 {
-  margin-top: 7px;
-  font-size: clamp(1.7rem, 4vw, 2.8rem);
+  margin-top: 0;
+  font-size: clamp(1.9rem, 4.4vw, 3.1rem);
   line-height: 1.05;
 }
 
@@ -781,18 +784,20 @@ time,
   }
 
   .hero-identity {
-    top: calc(64px + env(safe-area-inset-top));
+    top: calc(134px + env(safe-area-inset-top));
     left: 50%;
     width: calc(100% - 28px);
   }
 
   .hero-monogram {
-    font-size: clamp(3.45rem, 15vw, 4rem);
+    top: calc(20px + env(safe-area-inset-top));
+    left: 20px;
+    font-size: clamp(2.65rem, 12vw, 3.15rem);
   }
 
   .hero-copy h1 {
-    margin-top: 6px;
-    font-size: clamp(1.65rem, 7vw, 2rem);
+    margin-top: 0;
+    font-size: clamp(1.85rem, 8vw, 2.3rem);
     letter-spacing: 0.2em;
   }
 
