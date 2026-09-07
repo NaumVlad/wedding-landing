@@ -915,12 +915,18 @@ time,
     padding-top: 42px;
   }
 
+  .day-two {
+    padding-top: 42px;
+  }
+
   .day-card > header {
     gap: 10px;
   }
 
   .day-one > header span,
-  .day-one > header p {
+  .day-one > header p,
+  .day-two > header span,
+  .day-two > header p {
     position: relative;
     top: -9px;
     font-weight: 700;
@@ -928,7 +934,8 @@ time,
     -webkit-text-stroke: 0.2px currentColor;
   }
 
-  .day-one > header p {
+  .day-one > header p,
+  .day-two > header p {
     font-size: 0.72rem;
     letter-spacing: 0.12em;
     text-transform: none;
