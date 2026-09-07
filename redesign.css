@@ -138,8 +138,9 @@ time,
 
 .invitation-section {
   position: relative;
+  z-index: 1;
   isolation: isolate;
-  overflow: hidden;
+  overflow: visible;
   min-height: 460px;
   padding: clamp(46px, 5vw, 70px) 0;
   background: var(--paper);
@@ -154,7 +155,7 @@ time,
 
 .floral-intro {
   left: -6vw;
-  bottom: -6vw;
+  bottom: -32px;
   width: min(42vw, 560px);
   opacity: 0.78;
 }
@@ -215,6 +216,8 @@ time,
 }
 
 .program-section {
+  position: relative;
+  z-index: 0;
   padding: clamp(90px, 10vw, 150px) 0;
   background: var(--paper);
 }
@@ -863,7 +866,7 @@ time,
 
   .floral-intro {
     left: -8vw;
-    bottom: -5vw;
+    bottom: -22px;
     width: 55vw;
     opacity: 0.58;
   }
