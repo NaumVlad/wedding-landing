@@ -96,7 +96,8 @@ time,
 .photo-note,
 .handwritten-note,
 .finale-script,
-.with-love span {
+.with-love-label,
+.with-love-names {
   font-family: Italianno, "Cormorant Garamond", cursive;
   font-weight: 400;
 }
@@ -618,12 +619,14 @@ time,
 }
 
 .with-love {
+  display: grid;
+  gap: 14px;
   margin: 40px 0 0;
   font-size: 2.2rem;
   line-height: 0.9;
 }
 
-.with-love span {
+.with-love-names {
   font-size: clamp(2.7rem, 5vw, 4.3rem);
 }
 
@@ -895,19 +898,22 @@ time,
   }
 
   .finale-copy {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
     width: 100%;
     max-width: 394px;
   }
 
   .finale-script {
-    margin-bottom: 14px;
+    margin-bottom: 0;
     font-size: clamp(2.1rem, 9.4vw, 2.6rem);
     line-height: 1.04;
     white-space: nowrap;
   }
 
   .finale .footer-date {
-    margin-bottom: 8px;
+    margin-bottom: 0;
     font-size: clamp(1.55rem, 6.8vw, 1.85rem);
   }
 
@@ -918,12 +924,13 @@ time,
   }
 
   .with-love {
-    margin-top: 4px;
+    gap: 14px;
+    margin-top: 0;
     font-size: 1.35rem;
-    line-height: 1.05;
+    line-height: 1;
   }
 
-  .with-love span {
+  .with-love-names {
     font-size: clamp(2rem, 8.5vw, 2.4rem);
     line-height: 1;
   }
