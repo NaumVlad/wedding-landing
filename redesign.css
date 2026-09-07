@@ -74,7 +74,7 @@ time,
 }
 
 .hero-identity {
-  top: clamp(28px, 5svh, 64px);
+  top: clamp(68px, 9svh, 104px);
   left: 50%;
   width: min(90%, 680px);
   text-align: center;
@@ -92,7 +92,7 @@ time,
 }
 
 .hero-motto {
-  top: clamp(165px, 24svh, 270px);
+  top: clamp(205px, 28svh, 310px);
   left: 50%;
   width: min(94%, 680px);
   text-align: center;
@@ -781,7 +781,7 @@ time,
   }
 
   .hero-identity {
-    top: calc(24px + env(safe-area-inset-top));
+    top: calc(64px + env(safe-area-inset-top));
     left: 50%;
     width: calc(100% - 28px);
   }
@@ -797,7 +797,7 @@ time,
   }
 
   .hero-motto {
-    top: calc(150px + env(safe-area-inset-top));
+    top: calc(190px + env(safe-area-inset-top));
     left: 50%;
     width: calc(100% - 24px);
   }
