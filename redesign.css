@@ -700,15 +700,15 @@ time,
   }
 
   .invitation-section {
-    min-height: 500px;
-    padding: 44px 0 82px;
+    min-height: 0;
+    padding: 44px 0;
   }
 
   .floral-intro {
-    left: -12vw;
-    bottom: -22vw;
-    width: 72vw;
-    opacity: 0.4;
+    left: -2vw;
+    bottom: -6vw;
+    width: 78vw;
+    opacity: 0.58;
   }
 
   .invitation-copy h2 {
@@ -718,6 +718,10 @@ time,
 
   .invitation-copy {
     margin-right: auto;
+  }
+
+  .marry-line {
+    margin-bottom: 0;
   }
 
   .handwritten-note {
