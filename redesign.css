@@ -994,7 +994,7 @@ time,
   }
 
   .gift-note-card {
-    margin: 4px 0 38px;
+    margin: 16px 0 50px;
     padding: 26px 22px;
     border-radius: 2px;
   }
@@ -1006,7 +1006,10 @@ time,
 
   .guest-form-title {
     margin-bottom: 18px;
-    font-size: clamp(2.25rem, 10vw, 2.8rem);
+    font-size: clamp(2rem, 7.4vw, 4.4rem);
+    line-height: 0.93;
+    letter-spacing: -0.025em;
+    white-space: nowrap;
   }
 
   .rsvp-deadline {
