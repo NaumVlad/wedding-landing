@@ -337,8 +337,8 @@ time,
   max-width: 760px;
 }
 
-.location-inner > h2 {
-  margin-bottom: 32px;
+.location-inner > .section-kicker {
+  font-weight: 600;
 }
 
 .location-card {
@@ -350,13 +350,6 @@ time,
   box-shadow: 0 22px 55px rgba(68, 90, 102, 0.12);
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
-}
-
-.location-pin {
-  display: block;
-  margin-bottom: 14px;
-  color: var(--blue-dark);
-  font-size: 1.3rem;
 }
 
 .location-card p {
@@ -802,7 +795,7 @@ time,
   }
 
   .program-section {
-    padding-top: 48px;
+    padding: 48px 0 42px;
   }
 
   .program-section .section-inner > h2 {
@@ -812,15 +805,11 @@ time,
   }
 
   .location-section {
-    padding: 54px 0 62px;
-  }
-
-  .location-inner > h2 {
-    margin-bottom: 24px;
+    padding: 42px 0 48px;
   }
 
   .location-card {
-    padding: 32px 22px 34px;
+    padding: 26px 20px 28px;
   }
 
   .floral-location {
@@ -876,7 +865,8 @@ time,
   .details-photo {
     min-height: 76svh;
     background-image: linear-gradient(0deg, rgba(20, 24, 26, 0.46), transparent 55%), url("assets/details-studio.jpg");
-    background-position: 61% center;
+    background-position: center, 61% 68%;
+    background-size: 100% 100%, auto 118%;
   }
 
   .details-note {
