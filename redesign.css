@@ -93,28 +93,12 @@ time,
   margin-left: 0;
 }
 
-.hero-note,
 .photo-note,
 .handwritten-note,
 .finale-script,
 .with-love span {
   font-family: Italianno, "Cormorant Garamond", cursive;
   font-weight: 400;
-}
-
-.hero-note {
-  position: absolute;
-  z-index: 1;
-  right: auto;
-  left: 5vw;
-  top: 31%;
-  margin: 0;
-  color: rgba(255, 255, 255, 0.75);
-  font-size: clamp(1.8rem, 3vw, 3.2rem);
-  line-height: 0.76;
-  text-align: left;
-  transform: rotate(-5deg);
-  filter: drop-shadow(2px 2px 0 rgba(0, 0, 0, 0.5)) drop-shadow(3px 4px 5px rgba(0, 0, 0, 0.3));
 }
 
 .hero > .scroll {
@@ -572,14 +556,6 @@ time,
 
   .hero-motto .date {
     margin-left: 0;
-  }
-
-  .hero-note {
-    top: auto;
-    right: auto;
-    left: 18px;
-    bottom: 190px;
-    font-size: 1.65rem;
   }
 
   .hero > .scroll {
