@@ -116,8 +116,8 @@ time,
   position: relative;
   isolation: isolate;
   overflow: hidden;
-  min-height: 720px;
-  padding: clamp(110px, 13vw, 180px) 0;
+  min-height: 620px;
+  padding: clamp(82px, 9vw, 120px) 0;
   background: var(--paper);
 }
 
@@ -139,6 +139,21 @@ time,
   max-width: 710px;
   margin-right: 8vw;
   text-align: center;
+}
+
+.invitation-copy h2 {
+  margin-bottom: 30px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(3.15rem, 7.5vw, 5.2rem);
+  font-weight: 500;
+  line-height: 0.82;
+  letter-spacing: -0.035em;
+  text-transform: none;
+}
+
+.invitation-copy h2 span {
+  font-size: 0.84em;
+  font-weight: 400;
 }
 
 .invitation-copy > p:not(.section-kicker, .marry-line, .handwritten-note) {
@@ -563,14 +578,19 @@ time,
   }
 
   .invitation-section {
-    min-height: 720px;
-    padding: 100px 0 180px;
+    min-height: 600px;
+    padding: 74px 0 142px;
   }
 
   .floral-intro {
-    left: -24vw;
-    width: 105vw;
-    opacity: 0.44;
+    left: -19vw;
+    width: 88vw;
+    opacity: 0.4;
+  }
+
+  .invitation-copy h2 {
+    margin-bottom: 26px;
+    font-size: clamp(3rem, 14vw, 4.15rem);
   }
 
   .invitation-copy {
