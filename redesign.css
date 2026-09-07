@@ -836,11 +836,10 @@ time,
   }
 
   .details-photo {
-    min-height: 76svh;
-    background-color: #777776;
+    min-height: 69svh;
     background-image: linear-gradient(0deg, rgba(20, 24, 26, 0.46), transparent 55%), url("assets/details-studio.jpg");
     background-position: center, 50% center;
-    background-size: 100% 100%, auto 90%;
+    background-size: 100% 100%, auto 100%;
     background-repeat: no-repeat;
   }
 
