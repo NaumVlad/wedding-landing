@@ -191,6 +191,11 @@ time,
   background: var(--mist);
 }
 
+.program-section .section-inner > h2 {
+  -webkit-text-stroke: 0.7px currentColor;
+  paint-order: stroke fill;
+}
+
 .program-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
