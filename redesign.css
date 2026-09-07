@@ -143,17 +143,17 @@ time,
 
 .invitation-copy h2 {
   margin-bottom: 30px;
-  font-family: "Cormorant Garamond", serif;
-  font-size: clamp(3.15rem, 7.5vw, 5.2rem);
-  font-weight: 500;
-  line-height: 0.82;
-  letter-spacing: -0.035em;
+  font-family: Montserrat, sans-serif;
+  font-size: clamp(2.35rem, 5.8vw, 4.1rem);
+  font-weight: 300;
+  line-height: 1.05;
+  letter-spacing: 0.015em;
   text-transform: none;
 }
 
 .invitation-copy h2 span {
-  font-size: 0.84em;
-  font-weight: 400;
+  font-size: 0.78em;
+  font-weight: 300;
 }
 
 .invitation-copy > p:not(.section-kicker, .marry-line, .handwritten-note) {
@@ -590,7 +590,7 @@ time,
 
   .invitation-copy h2 {
     margin-bottom: 26px;
-    font-size: clamp(3rem, 14vw, 4.15rem);
+    font-size: clamp(2.25rem, 10.5vw, 3.15rem);
   }
 
   .invitation-copy {
