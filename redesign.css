@@ -155,7 +155,7 @@ time,
 
 .floral-intro {
   left: -6vw;
-  bottom: -32px;
+  bottom: -48px;
   width: min(42vw, 560px);
   opacity: 0.78;
 }
@@ -866,7 +866,7 @@ time,
 
   .floral-intro {
     left: -8vw;
-    bottom: -22px;
+    bottom: -40px;
     width: 55vw;
     opacity: 0.58;
   }
