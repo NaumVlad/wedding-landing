@@ -338,7 +338,10 @@ time,
 }
 
 .location-inner > .section-kicker {
+  font-size: 0.78rem;
   font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: none;
 }
 
 .location-card {
@@ -366,6 +369,8 @@ time,
   font-size: clamp(1.25rem, 3vw, 1.7rem);
   font-weight: 500;
   letter-spacing: 0.06em;
+  -webkit-text-stroke: 0.5px currentColor;
+  paint-order: stroke fill;
 }
 
 .location-button {
@@ -865,8 +870,8 @@ time,
   .details-photo {
     min-height: 76svh;
     background-image: linear-gradient(0deg, rgba(20, 24, 26, 0.46), transparent 55%), url("assets/details-studio.jpg");
-    background-position: center, 61% 68%;
-    background-size: 100% 100%, auto 118%;
+    background-position: center, 61% 52%;
+    background-size: 100% 100%, auto 107%;
   }
 
   .details-note {
