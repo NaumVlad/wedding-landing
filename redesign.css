@@ -586,6 +586,49 @@ time,
   text-transform: none;
 }
 
+.party-details {
+  display: grid;
+  gap: 16px;
+  margin: 0 0 6px;
+  padding: 16px;
+  border: 1px solid rgba(68, 90, 102, 0.24);
+  border-radius: 14px;
+  background: rgba(253, 251, 247, 0.55);
+}
+
+.party-details[hidden] {
+  display: none;
+}
+
+.party-size-field,
+.party-name-field {
+  display: grid;
+  gap: 7px;
+  color: var(--soft-ink);
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.party-size-field input,
+.party-name-field input {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid var(--line);
+  border-radius: 11px;
+  background: var(--paper);
+  color: var(--ink);
+  font: 400 0.9rem Montserrat, sans-serif;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.party-names {
+  display: grid;
+  gap: 14px;
+}
+
 .form-options-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -919,6 +962,11 @@ time,
 
   .choice-list {
     padding: 20px 14px;
+  }
+
+  .party-size-field input,
+  .party-name-field input {
+    font-size: 1rem;
   }
 
   .rsvp-section {
