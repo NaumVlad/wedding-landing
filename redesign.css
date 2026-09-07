@@ -635,10 +635,71 @@ time,
   max-width: 520px;
 }
 
+.finale-monogram {
+  width: auto;
+  height: auto;
+  gap: 0.18em;
+  color: #fff;
+  font-size: clamp(3rem, 6vw, 5rem);
+}
+
+.finale-title {
+  margin: 24px 0 4px;
+  color: #fff;
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+}
+
 .finale-script {
   margin: 0 0 18px;
   font-size: clamp(3.1rem, 7vw, 6rem);
   line-height: 0.86;
+}
+
+.finale-ornament,
+.finale-date-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+
+.finale-ornament {
+  margin-top: 16px;
+}
+
+.finale-ornament span,
+.finale-date-row span {
+  width: 74px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.finale-ornament b {
+  font: 400 1.55rem/1 "Cormorant Garamond", serif;
+}
+
+.finale-signature {
+  position: absolute;
+  z-index: 1;
+  right: 7vw;
+  bottom: 52px;
+  left: 7vw;
+  text-align: center;
+}
+
+.finale-names {
+  margin: 0 0 12px;
+  font: 500 0.86rem/1 Montserrat, sans-serif;
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+}
+
+.finale-date-row time {
+  font: 500 0.76rem/1 "Bodoni Moda", serif;
+  letter-spacing: 0.12em;
 }
 
 .finale .footer-date {
@@ -878,7 +939,7 @@ time,
     align-items: flex-start;
     justify-content: flex-start;
     padding: calc(18px + env(safe-area-inset-top)) 18px 24px;
-    background-position: 60% center;
+    background-position: 52% center;
     text-align: center;
   }
 
@@ -889,16 +950,64 @@ time,
   .finale-copy {
     display: flex;
     flex-direction: column;
-    gap: 14px;
+    gap: 0;
     width: 100%;
     max-width: 394px;
   }
 
+  .finale-monogram {
+    align-self: center;
+    font-size: clamp(2.65rem, 12vw, 3.25rem);
+  }
+
+  .finale-monogram .monogram-letter {
+    -webkit-text-stroke-width: 0.45px;
+  }
+
+  .finale-title {
+    margin: 20px 0 2px;
+    font-size: clamp(2rem, 8.6vw, 2.55rem);
+    line-height: 1;
+    letter-spacing: 0.06em;
+  }
+
   .finale-script {
     margin-bottom: 0;
-    font-size: clamp(2.1rem, 9.4vw, 2.6rem);
-    line-height: 1.04;
+    font-size: clamp(2.3rem, 10.2vw, 2.8rem);
+    line-height: 1;
     white-space: nowrap;
+  }
+
+  .finale-ornament {
+    margin-top: 10px;
+  }
+
+  .finale-ornament span {
+    width: 62px;
+  }
+
+  .finale-signature {
+    right: 18px;
+    bottom: calc(26px + env(safe-area-inset-bottom));
+    left: 18px;
+  }
+
+  .finale-names {
+    margin-bottom: 12px;
+    font-size: 0.68rem;
+    letter-spacing: 0.32em;
+  }
+
+  .finale-date-row {
+    gap: 10px;
+  }
+
+  .finale-date-row span {
+    width: 42px;
+  }
+
+  .finale-date-row time {
+    font-size: 0.68rem;
   }
 
   .finale .footer-date {
