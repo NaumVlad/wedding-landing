@@ -98,6 +98,7 @@ time,
   font-size: clamp(2rem, 4.8vw, 3.3rem);
   line-height: 1.05;
   letter-spacing: 0.18em;
+  -webkit-text-stroke: 0.4px currentColor;
   white-space: nowrap;
 }
 
