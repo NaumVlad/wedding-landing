@@ -116,8 +116,8 @@ time,
   position: relative;
   isolation: isolate;
   overflow: hidden;
-  min-height: 620px;
-  padding: clamp(82px, 9vw, 120px) 0;
+  min-height: 520px;
+  padding: clamp(58px, 6vw, 86px) 0;
   background: var(--paper);
 }
 
@@ -581,13 +581,14 @@ time,
   }
 
   .invitation-section {
-    min-height: 600px;
-    padding: 74px 0 142px;
+    min-height: 500px;
+    padding: 44px 0 82px;
   }
 
   .floral-intro {
-    left: -19vw;
-    width: 88vw;
+    left: -12vw;
+    bottom: -22vw;
+    width: 72vw;
     opacity: 0.4;
   }
 
