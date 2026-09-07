@@ -728,3 +728,17 @@ time,
     bottom: calc(10px + env(safe-area-inset-bottom));
   }
 }
+
+/* Композиция iPhone 14 Pro Max с учетом разной высоты окна Safari и Telegram. */
+@media (min-width: 414px) and (max-width: 440px) {
+  .hero-identity {
+    top: clamp(145px, 19svh, 178px);
+    left: 31%;
+  }
+
+  .hero-motto {
+    top: clamp(260px, 34svh, 320px);
+    left: -7vw;
+    width: 76vw;
+  }
+}
