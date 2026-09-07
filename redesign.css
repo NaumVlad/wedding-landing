@@ -371,8 +371,8 @@ time,
 }
 
 .location-inner > .section-kicker {
-  font-size: 0.9rem;
-  font-weight: 600;
+  font-size: 1rem;
+  font-weight: 700;
   letter-spacing: 0.2em;
   text-transform: none;
 }
