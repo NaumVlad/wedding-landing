@@ -541,6 +541,13 @@ time,
 }
 
 @media (max-width: 759px) {
+  .hero,
+  .finale {
+    min-height: 100vh;
+    min-height: 100svh;
+    height: 100dvh;
+  }
+
   .section-inner {
     width: min(calc(100% - 36px), 620px);
   }
@@ -680,7 +687,7 @@ time,
 @media (min-width: 375px) and (max-width: 450px) and (min-aspect-ratio: 43 / 100) and (max-aspect-ratio: 1 / 2) {
   .hero {
     min-height: 100svh;
-    height: 100svh;
+    height: 100dvh;
   }
 
   .photo.photo-1 {
