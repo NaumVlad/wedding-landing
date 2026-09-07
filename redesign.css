@@ -922,6 +922,7 @@ time,
   }
 
   .day-one > header p {
+    font-size: 0.72rem;
     letter-spacing: 0.12em;
     text-transform: none;
   }
