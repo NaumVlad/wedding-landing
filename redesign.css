@@ -371,10 +371,12 @@ time,
 }
 
 .location-inner > .section-kicker {
-  font-size: 1rem;
+  color: var(--ink);
+  font-size: 1.1rem;
   font-weight: 700;
   letter-spacing: 0.2em;
   text-transform: none;
+  -webkit-text-stroke: 0.25px currentColor;
 }
 
 .location-card {
