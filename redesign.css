@@ -153,9 +153,9 @@ time,
 }
 
 .floral-intro {
-  left: -5vw;
-  bottom: -8vw;
-  width: min(55vw, 740px);
+  left: -6vw;
+  bottom: -6vw;
+  width: min(42vw, 560px);
   opacity: 0.78;
 }
 
@@ -216,7 +216,7 @@ time,
 
 .program-section {
   padding: clamp(90px, 10vw, 150px) 0;
-  background: var(--mist);
+  background: var(--paper);
 }
 
 .program-section .section-inner > h2 {
@@ -227,12 +227,15 @@ time,
 .program-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  box-shadow: 0 24px 65px rgba(54, 75, 85, 0.13);
+  gap: clamp(14px, 2vw, 24px);
 }
 
 .day-card {
   min-width: 0;
   padding: clamp(34px, 5vw, 68px);
+  color: var(--ink);
+  border: 1px solid rgba(68, 90, 102, 0.16);
+  box-shadow: 0 18px 46px rgba(54, 75, 85, 0.11);
 }
 
 .day-card > header {
@@ -266,12 +269,11 @@ time,
 }
 
 .day-one {
-  background: var(--blue);
-  color: #fff;
+  background: #e5e9e8;
 }
 
 .day-two {
-  background: var(--paper);
+  background: #eeeae3;
 }
 
 .day-lead {
@@ -860,9 +862,9 @@ time,
   }
 
   .floral-intro {
-    left: -2vw;
-    bottom: -6vw;
-    width: 78vw;
+    left: -8vw;
+    bottom: -5vw;
+    width: 55vw;
     opacity: 0.58;
   }
 
