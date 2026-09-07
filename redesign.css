@@ -565,8 +565,9 @@ time,
     position: absolute;
     top: 34%;
     left: 50%;
-    width: min(330px, calc(100% - 44px));
-    padding: 30px 28px 25px;
+    width: min(390px, calc(100% - 28px));
+    min-height: 190px;
+    padding: 35px 32px 30px;
     transform: translate(-50%, -50%);
     border: 1px solid rgba(253, 251, 247, 0.82);
     background: rgba(40, 61, 70, 0.94);
@@ -612,10 +613,10 @@ time,
 
   .browser-hint-arrow {
     position: absolute;
-    right: 13px;
-    bottom: calc(6px + env(safe-area-inset-bottom));
-    width: 112px;
-    height: 205px;
+    right: 58px;
+    bottom: calc(2px + env(safe-area-inset-bottom));
+    width: 132px;
+    height: 235px;
     overflow: visible;
     filter: drop-shadow(0 3px 8px rgba(12, 20, 24, 0.4));
     animation: browser-hint-pulse 1.7s ease-in-out infinite;
@@ -624,7 +625,7 @@ time,
   .browser-hint-arrow path {
     fill: none;
     stroke: #fdfbf7;
-    stroke-width: 3;
+    stroke-width: 3.5;
     stroke-linecap: round;
     stroke-linejoin: round;
   }
