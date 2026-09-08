@@ -394,6 +394,7 @@ time,
 .schedule-list li {
   display: grid;
   grid-template-columns: 78px 1fr;
+  align-items: baseline;
   gap: 18px;
   padding: 15px 0;
   border-bottom: 1px solid currentColor;
