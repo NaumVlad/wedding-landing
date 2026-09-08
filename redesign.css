@@ -338,23 +338,23 @@ time,
 .day-one > header {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
-  align-items: baseline;
+  align-items: center;
 }
 
-.day-one > header .day-label {
-  font-size: 1rem;
-  font-weight: 600;
-  letter-spacing: 0.12em;
-  text-transform: none;
-}
-
+.day-one > header .day-label,
 .day-one > header .day-date {
   margin: 0;
   font-family: Montserrat, sans-serif;
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 600;
+  line-height: 1;
   letter-spacing: 0.12em;
+  text-transform: none;
   -webkit-text-stroke: 0;
+}
+
+.day-one > header .day-date {
+  justify-self: end;
 }
 
 .day-one > header .day-theme {
@@ -1141,13 +1141,10 @@ time,
     gap: 10px;
   }
 
-  .day-one > header .day-label {
+  .day-one > header .day-label,
+  .day-one > header .day-date {
     position: static;
     font-size: 1.05rem;
-  }
-
-  .day-one > header .day-date {
-    font-size: 0.72rem;
   }
 
   .day-one > header .day-theme {
