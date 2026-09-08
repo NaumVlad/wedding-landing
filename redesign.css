@@ -573,7 +573,7 @@ time,
   min-height: 92svh;
   padding-top: clamp(42px, 6vw, 72px);
   border: 1px solid rgba(68, 90, 102, 0.16);
-  background: #d9e1e2 url("assets/location-osokory-clean.png") center 40% / cover no-repeat;
+  background: #d9e1e2 url("assets/location-osokory-clean-no-logo.png") center 40% / cover no-repeat;
   box-shadow: 0 18px 46px rgba(54, 75, 85, 0.11);
 }
 
@@ -777,7 +777,7 @@ time,
   max-width: 590px;
   margin: 0 auto;
   font-size: clamp(1rem, 2.2vw, 1.2rem);
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1.65;
 }
 
