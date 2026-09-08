@@ -761,7 +761,9 @@ time,
 
 .rsvp-deadline {
   margin: 0 0 42px;
-  font-weight: 600;
+  font-size: clamp(1.05rem, 2.8vw, 1.35rem);
+  font-weight: 700;
+  line-height: 1.5;
 }
 
 .gift-note-card {
@@ -777,7 +779,7 @@ time,
   max-width: 590px;
   margin: 0 auto;
   font-size: clamp(1rem, 2.2vw, 1.2rem);
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.65;
 }
 
@@ -1430,7 +1432,9 @@ time,
   .rsvp-deadline {
     margin: 0 0 38px;
     color: #b3474f;
+    font-size: 1.12rem;
     font-weight: 700;
+    line-height: 1.55;
     -webkit-text-stroke: 0.18px currentColor;
   }
 
