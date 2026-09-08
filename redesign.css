@@ -610,9 +610,9 @@ time,
   justify-content: center;
   align-items: center;
   gap: 14px;
-  width: 263px;
-  height: 76px;
-  margin-top: 26px;
+  width: 240px;
+  height: 94px;
+  margin: 0;
   padding: 0 28px 4px 34px;
   border: 0;
   background: transparent;
@@ -625,10 +625,22 @@ time,
   transition: color 180ms ease, transform 180ms ease;
 }
 
+.location-section > .location-button {
+  position: absolute;
+  z-index: 2;
+  right: 50%;
+  bottom: clamp(46px, 7svh, 82px);
+  transform: translateX(50%);
+}
+
 .location-button:hover,
 .location-button:focus-visible {
   color: #fff;
-  transform: translateY(-2px);
+}
+
+.location-section > .location-button:hover,
+.location-section > .location-button:focus-visible {
+  transform: translate(50%, -2px);
 }
 
 .location-button-outline {
