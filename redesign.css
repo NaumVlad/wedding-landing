@@ -855,7 +855,7 @@ time,
   }
 
   .photo.photo-1 {
-    background-size: cover;
+    background-size: auto 106%;
     background-position: center 45%;
   }
 
@@ -884,9 +884,13 @@ time,
   }
 
   .hero-motto {
-    top: calc(160px + env(safe-area-inset-top));
+    top: calc(112px + env(safe-area-inset-top));
     left: 50%;
     width: calc(100% - 24px);
+  }
+
+  .dolce-vita {
+    font-size: clamp(3rem, 15vw, 4.2rem);
   }
 
   .hero-motto .date {
