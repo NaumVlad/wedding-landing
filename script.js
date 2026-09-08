@@ -1,3 +1,31 @@
+const siteImageSources = [
+  "assets/hero-portrait.jpg",
+  "assets/invitation-champagne-hydrangea.png",
+  "assets/location-osokory-clean-no-logo.png",
+  "assets/details-studio.jpg",
+  "assets/finale-couple.jpg"
+];
+
+const showSite = () => document.documentElement.classList.remove("site-loading");
+const preloadImage = source => new Promise(resolve => {
+  const image = new Image();
+  image.onload = () => {
+    if (typeof image.decode !== "function") {
+      resolve();
+      return;
+    }
+    image.decode().catch(() => {}).finally(resolve);
+  };
+  image.onerror = resolve;
+  image.src = source;
+});
+
+const preloadFallback = window.setTimeout(showSite, 20000);
+Promise.all(siteImageSources.map(preloadImage)).then(() => {
+  window.clearTimeout(preloadFallback);
+  showSite();
+});
+
 const menu = document.querySelector(".menu");
 const links = document.querySelector(".nav-links");
 
