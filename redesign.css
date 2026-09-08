@@ -866,7 +866,7 @@ time,
   }
 
   .hero-identity {
-    top: calc(36px + env(safe-area-inset-top));
+    top: calc(64px + env(safe-area-inset-top));
     left: 50%;
     width: calc(100% - 28px);
   }
@@ -884,7 +884,7 @@ time,
   }
 
   .hero-motto {
-    top: calc(84px + env(safe-area-inset-top));
+    top: calc(136px + env(safe-area-inset-top));
     left: 50%;
     width: calc(100% - 24px);
     filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.38));
@@ -900,7 +900,7 @@ time,
   .hero-motto .date {
     margin-top: 0;
     margin-left: 0;
-    font-size: clamp(1.08rem, 4.4vw, 1.25rem);
+    font-size: clamp(1.2rem, 5vw, 1.38rem);
   }
 
   .hero > .scroll {
