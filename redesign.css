@@ -625,7 +625,7 @@ time,
   position: relative;
   height: clamp(420px, 62vw, 680px);
   margin-top: -1px;
-  background: #d9e1e2 url("assets/location-osokory-background.png") center 42% / cover no-repeat;
+  background: #d9e1e2 url("assets/location-osokory-clean.png") center 42% / cover no-repeat;
 }
 
 .location-photo::before {
