@@ -856,7 +856,7 @@ time,
 
   .photo.photo-1 {
     background-size: auto 106%;
-    background-position: center 45%;
+    background-position: 86% 45%;
   }
 
   .hero-copy {
@@ -866,7 +866,7 @@ time,
   }
 
   .hero-identity {
-    top: calc(119px + env(safe-area-inset-top));
+    top: calc(36px + env(safe-area-inset-top));
     left: 50%;
     width: calc(100% - 28px);
   }
@@ -884,7 +884,7 @@ time,
   }
 
   .hero-motto {
-    top: calc(112px + env(safe-area-inset-top));
+    top: calc(84px + env(safe-area-inset-top));
     left: 50%;
     width: calc(100% - 24px);
   }
