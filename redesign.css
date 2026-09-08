@@ -760,7 +760,7 @@ time,
 }
 
 .rsvp-deadline {
-  margin: 0 0 42px;
+  margin: 0 0 50px;
   font-size: clamp(1.05rem, 2.8vw, 1.35rem);
   font-weight: 700;
   line-height: 1.5;
@@ -784,7 +784,7 @@ time,
 }
 
 .guest-form-title {
-  margin: 0 0 28px;
+  margin: 0 0 38px;
   font: 400 clamp(2.4rem, 6vw, 4rem)/1 "Bodoni Moda", serif;
   letter-spacing: -0.025em;
   text-align: center;
@@ -1422,7 +1422,7 @@ time,
   }
 
   .guest-form-title {
-    margin-bottom: 38px;
+    margin-bottom: 46px;
     font-size: clamp(2rem, 7.4vw, 4.4rem);
     line-height: 0.93;
     letter-spacing: -0.025em;
@@ -1430,7 +1430,7 @@ time,
   }
 
   .rsvp-deadline {
-    margin: 0 0 38px;
+    margin: 0 0 50px;
     color: #b3474f;
     font-size: 1.12rem;
     font-weight: 700;
