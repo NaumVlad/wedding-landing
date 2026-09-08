@@ -616,7 +616,7 @@ time,
   padding: 0 28px 4px 34px;
   border: 0;
   background: transparent;
-  color: var(--blue-dark);
+  color: #fff;
   font-size: 0.66rem;
   font-weight: 500;
   letter-spacing: 0.15em;
@@ -640,16 +640,16 @@ time,
 }
 
 .location-button-outline path {
-  fill: rgba(253, 251, 247, 0.16);
-  stroke: currentColor;
-  stroke-width: 1.35;
+  fill: #617765;
+  stroke: rgba(255, 255, 255, 0.72);
+  stroke-width: 1;
   vector-effect: non-scaling-stroke;
   transition: fill 180ms ease;
 }
 
 .location-button:hover .location-button-outline path,
 .location-button:focus-visible .location-button-outline path {
-  fill: rgba(22, 43, 52, 0.78);
+  fill: #4d6553;
 }
 
 .location-button > span,
