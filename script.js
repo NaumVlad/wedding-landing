@@ -11,6 +11,27 @@ links?.addEventListener("click", () => {
   menu?.setAttribute("aria-expanded", "false");
 });
 
+const mobileViewport = window.matchMedia("(max-width: 759px)");
+let lockedViewportWidth = window.innerWidth;
+
+const lockMobileHeroHeight = () => {
+  if (!mobileViewport.matches) {
+    document.documentElement.style.removeProperty("--mobile-hero-height");
+    return;
+  }
+
+  const viewportHeight = Math.round(window.visualViewport?.height || window.innerHeight);
+  document.documentElement.style.setProperty("--mobile-hero-height", `${viewportHeight}px`);
+};
+
+lockMobileHeroHeight();
+
+window.addEventListener("resize", () => {
+  if (Math.abs(window.innerWidth - lockedViewportWidth) < 24) return;
+  lockedViewportWidth = window.innerWidth;
+  lockMobileHeroHeight();
+}, { passive: true });
+
 const scrollCue = document.querySelector(".scroll-cue");
 if (scrollCue) {
   const hideScrollCue = () => document.documentElement.classList.add("has-scrolled");

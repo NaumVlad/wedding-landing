@@ -873,11 +873,15 @@ time,
     transform: translateY(0);
   }
 
-  .hero,
+  .hero {
+    min-height: var(--mobile-hero-height, 100vh);
+    height: var(--mobile-hero-height, 100vh);
+  }
+
   .finale {
     min-height: 100vh;
     min-height: 100svh;
-    height: 100dvh;
+    height: 100svh;
   }
 
   .section-inner {
