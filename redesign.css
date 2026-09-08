@@ -541,10 +541,25 @@ time,
   width: min(820px, calc(100% - 44px));
   max-width: none;
   overflow: hidden;
+  min-height: 92svh;
   padding-top: clamp(42px, 6vw, 72px);
   border: 1px solid rgba(68, 90, 102, 0.16);
-  background: #eeeae3;
+  background: #d9e1e2 url("assets/location-osokory-clean.png") center 40% / cover no-repeat;
   box-shadow: 0 18px 46px rgba(54, 75, 85, 0.11);
+}
+
+.location-inner::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(238, 234, 227, 0.72) 0%, rgba(238, 234, 227, 0.38) 28%, rgba(238, 234, 227, 0.08) 52%, transparent 70%);
+  pointer-events: none;
+}
+
+.location-inner > * {
+  position: relative;
+  z-index: 1;
 }
 
 .location-inner > .section-kicker {
@@ -582,6 +597,7 @@ time,
   line-height: 1.75;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  text-align: center;
   text-shadow: 0 1px 10px rgba(253, 251, 247, 0.92), 0 0 24px rgba(253, 251, 247, 0.76);
 }
 
@@ -598,7 +614,7 @@ time,
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: min(360px, 88vw);
+  width: min(100%, 360px);
   min-height: 70px;
   margin-top: 32px;
   padding: 18px 28px;
@@ -619,25 +635,6 @@ time,
 .location-button:focus-visible {
   background: #354e5a;
   transform: translateY(-2px);
-}
-
-.location-photo {
-  position: relative;
-  height: clamp(420px, 62vw, 680px);
-  margin-top: -1px;
-  background: #d9e1e2 url("assets/location-osokory-clean.png") center 42% / cover no-repeat;
-}
-
-.location-photo::before {
-  content: "";
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  right: 0;
-  left: 0;
-  height: 110px;
-  background: linear-gradient(180deg, #eeeae3 0%, rgba(238, 234, 227, 0.82) 24%, rgba(238, 234, 227, 0.28) 62%, transparent 100%);
-  pointer-events: none;
 }
 
 .floral-location {
@@ -1180,7 +1177,10 @@ time,
 
   .location-inner {
     width: min(calc(100% - 28px), 620px);
+    min-height: 100svh;
     padding-top: 42px;
+    background-position: center top;
+    background-size: auto 116%;
   }
 
   .location-inner > .section-kicker {
@@ -1192,11 +1192,6 @@ time,
 
   .location-card {
     padding: 0 22px 36px;
-  }
-
-  .location-photo {
-    height: min(128vw, 620px);
-    background-position: center 40%;
   }
 
   .floral-location {
