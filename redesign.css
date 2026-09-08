@@ -760,7 +760,7 @@ time,
 }
 
 .rsvp-deadline {
-  margin: 0 0 50px;
+  margin: 0 0 58px;
   font-size: clamp(1.05rem, 2.8vw, 1.35rem);
   font-weight: 700;
   line-height: 1.5;
@@ -794,7 +794,7 @@ time,
 .guest-form-title::before {
   content: "";
   position: absolute;
-  top: -26px;
+  top: -34px;
   right: 8px;
   left: 8px;
   height: 1px;
@@ -1448,7 +1448,7 @@ time,
   }
 
   .rsvp-deadline {
-    margin: 0 0 50px;
+    margin: 0 0 58px;
     color: #b3474f;
     font-size: 1.12rem;
     font-weight: 700;
