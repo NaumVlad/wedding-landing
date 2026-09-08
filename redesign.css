@@ -144,7 +144,7 @@ time,
   position: relative;
   z-index: 1;
   isolation: isolate;
-  overflow: visible;
+  overflow: hidden;
   min-height: 460px;
   padding: clamp(46px, 5vw, 70px) 0;
   background: var(--paper);
@@ -168,7 +168,15 @@ time,
   width: min(820px, calc(100% - 44px));
   max-width: none;
   margin-inline: auto;
+  overflow: hidden;
+  border: 1px solid rgba(68, 90, 102, 0.16);
+  background: #eeeae3;
+  box-shadow: 0 18px 46px rgba(54, 75, 85, 0.11);
   text-align: center;
+}
+
+.invitation-card-body {
+  padding: clamp(42px, 6vw, 72px) clamp(28px, 6vw, 70px) clamp(38px, 5vw, 62px);
 }
 
 .invitation-copy .section-kicker {
@@ -192,12 +200,38 @@ time,
   font-weight: 400;
 }
 
-.invitation-copy > p:not(.section-kicker, .marry-line, .handwritten-note) {
+.invitation-card-body > p:not(.section-kicker, .marry-line, .handwritten-note, .invitation-date) {
   max-width: 610px;
   margin-inline: auto;
   font-size: clamp(1rem, 2vw, 1.2rem);
   font-weight: 400;
   text-shadow: -1px 0 2px rgba(253, 251, 247, 0.98), 1px 0 2px rgba(253, 251, 247, 0.98), 0 -1px 2px rgba(253, 251, 247, 0.98), 0 1px 2px rgba(253, 251, 247, 0.98), 0 0 8px rgba(253, 251, 247, 0.96), 0 0 12px rgba(253, 251, 247, 0.72);
+}
+
+.invitation-divider {
+  display: block;
+  width: 42px;
+  height: 1px;
+  margin: 0 auto 28px;
+  background: rgba(68, 90, 102, 0.42);
+}
+
+.invitation-message {
+  margin-top: 28px;
+}
+
+.invitation-date {
+  margin: 48px 0 0;
+  font: 500 clamp(1.6rem, 4vw, 2.7rem)/1.1 "Bodoni Moda", "Times New Roman", serif;
+  letter-spacing: 0.03em;
+}
+
+.invitation-photo {
+  display: block;
+  width: 100%;
+  height: clamp(280px, 42vw, 440px);
+  object-fit: cover;
+  object-position: center 48%;
 }
 
 .marry-line {
@@ -909,7 +943,7 @@ time,
 
   .invitation-section {
     min-height: 0;
-    padding: 50px 0 70px;
+    padding: 28px 0 48px;
   }
 
   .program-section {
@@ -960,8 +994,29 @@ time,
     width: min(calc(100% - 28px), 620px);
   }
 
+  .invitation-card-body {
+    padding: 42px 22px 36px;
+  }
+
+  .invitation-divider {
+    margin-bottom: 24px;
+  }
+
+  .invitation-message {
+    margin-top: 26px;
+  }
+
+  .invitation-date {
+    margin-top: 42px;
+    font-size: clamp(1.6rem, 7vw, 2rem);
+  }
+
+  .invitation-photo {
+    height: 270px;
+  }
+
   .marry-line {
-    margin: 70px 0 0;
+    margin: 44px 0 0;
     font-size: clamp(1.35rem, 6.2vw, 2.05rem);
     letter-spacing: 0.1em;
   }
