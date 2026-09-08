@@ -699,9 +699,14 @@ time,
 }
 
 .details-arrow {
+  align-self: flex-start;
+  display: inline-block;
   font-family: Montserrat, sans-serif;
-  font-size: 1.15em;
+  font-size: 1.05em;
   font-weight: 300;
+  line-height: 1;
+  transform: translateX(1.5em) scaleY(1.55);
+  transform-origin: 50% 12%;
 }
 
 .rsvp-section {
