@@ -816,6 +816,46 @@ time,
   resize: vertical;
 }
 
+.text-field > span,
+.choice-list,
+.choice-list legend,
+.text-field input,
+.text-field textarea,
+.custom-attendance-field,
+.custom-attendance-field input,
+.party-size-field,
+.party-name-field,
+.party-size-field input,
+.party-name-field input {
+  transition: color 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.field-invalid > span:first-child,
+.field-invalid > legend,
+.custom-attendance-field.field-invalid,
+.party-size-field.field-invalid,
+.party-name-field.field-invalid {
+  color: #b54b50;
+}
+
+.text-field.field-invalid input,
+.text-field.field-invalid textarea,
+.custom-attendance-field.field-invalid input,
+.party-size-field.field-invalid input,
+.party-name-field.field-invalid input {
+  border-color: rgba(181, 75, 80, 0.78);
+  box-shadow: 0 2px 0 rgba(181, 75, 80, 0.08);
+}
+
+.choice-list.field-invalid {
+  border-color: rgba(181, 75, 80, 0.7);
+  box-shadow: inset 0 0 0 1px rgba(181, 75, 80, 0.06);
+}
+
+.field-invalid .required-mark {
+  color: #b54b50;
+}
+
 .choice-list {
   display: grid;
   gap: 10px;

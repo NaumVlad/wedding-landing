@@ -90,10 +90,35 @@ const customAttendanceText = document.querySelector("#attendance-custom-text");
 const partyOptions = [...document.querySelectorAll("[data-party]")];
 const partyDetails = [...document.querySelectorAll("[data-party-details]")];
 
+const getValidationGroup = control => control?.closest(
+  ".text-field, .custom-attendance-field, .party-size-field, .party-name-field, .choice-list"
+);
+
+const clearValidationGroup = group => {
+  if (!group) return;
+  group.classList.remove("field-invalid");
+  group.querySelectorAll("[aria-invalid='true']").forEach(control => {
+    control.removeAttribute("aria-invalid");
+  });
+};
+
+const clearValidationState = () => {
+  form?.querySelectorAll(".field-invalid").forEach(clearValidationGroup);
+};
+
+const markValidationGroup = group => {
+  if (!group) return;
+  group.classList.add("field-invalid");
+  group.querySelectorAll("input:not(:disabled), textarea:not(:disabled), select:not(:disabled)").forEach(control => {
+    control.setAttribute("aria-invalid", "true");
+  });
+};
+
 const syncCustomAttendance = () => {
   const active = Boolean(customAttendance?.checked);
 
   if (customAttendanceField) customAttendanceField.hidden = !active;
+  if (!active) clearValidationGroup(customAttendanceField);
   if (customAttendanceText) {
     customAttendanceText.disabled = !active;
     customAttendanceText.required = active;
@@ -106,6 +131,7 @@ const syncPartyDetails = () => {
   partyDetails.forEach(section => {
     const active = section.dataset.partyDetails === selectedParty;
     section.hidden = !active;
+    if (!active) clearValidationGroup(section.querySelector(".field-invalid"));
     section.querySelectorAll("input").forEach(input => {
       input.disabled = !active;
     });
@@ -115,20 +141,46 @@ const syncPartyDetails = () => {
 attendanceInputs.forEach(input => input.addEventListener("change", () => {
   syncCustomAttendance();
   syncPartyDetails();
+  clearValidationGroup(input.closest(".choice-list"));
 }));
 syncCustomAttendance();
 syncPartyDetails();
 
 drinkInputs.forEach(input => input.addEventListener("change", () => {
   drinkInputs[0]?.setCustomValidity("");
+  if (drinkInputs.some(drink => drink.checked)) {
+    clearValidationGroup(input.closest(".choice-list"));
+  }
 }));
+
+form?.addEventListener("input", event => {
+  const control = event.target;
+  if (!(control instanceof HTMLInputElement || control instanceof HTMLTextAreaElement || control instanceof HTMLSelectElement)) return;
+  if (control.matches('input[name="drinks"]')) return;
+  if (control.checkValidity()) clearValidationGroup(getValidationGroup(control));
+});
 
 form?.addEventListener("submit", event => {
   event.preventDefault();
 
-  if (!drinkInputs.some(input => input.checked)) {
-    drinkInputs[0]?.setCustomValidity("Оберіть хоча б один варіант напою");
-    drinkInputs[0]?.reportValidity();
+  document.querySelector(".form-status").textContent = "";
+  clearValidationState();
+
+  const invalidControls = [...form.querySelectorAll("input, textarea, select")].filter(control => (
+    !control.disabled && control.willValidate && !control.checkValidity()
+  ));
+  invalidControls.forEach(control => markValidationGroup(getValidationGroup(control)));
+
+  const drinksValid = drinkInputs.some(input => input.checked);
+  if (!drinksValid) {
+    markValidationGroup(drinkInputs[0]?.closest(".choice-list"));
+  }
+
+  if (invalidControls.length || !drinksValid) {
+    const firstInvalidControl = invalidControls[0] || drinkInputs[0];
+    const firstInvalidGroup = getValidationGroup(firstInvalidControl);
+    firstInvalidGroup?.scrollIntoView({ behavior: "smooth", block: "center" });
+    window.setTimeout(() => firstInvalidControl?.focus({ preventScroll: true }), 350);
     return;
   }
 
@@ -139,6 +191,7 @@ form?.addEventListener("submit", event => {
 
   document.querySelector(".form-status").textContent = "Дякуємо! Вашу відповідь збережено на цьому пристрої.";
   form.reset();
+  clearValidationState();
   syncCustomAttendance();
   syncPartyDetails();
 });
