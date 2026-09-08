@@ -664,6 +664,9 @@ time,
 
 .submit-button {
   justify-self: center;
+  min-width: min(330px, calc(100vw - 40px));
+  min-height: 70px;
+  padding: 17px 28px;
   border-color: var(--blue-dark);
   background: var(--blue-dark);
   color: #fff;
