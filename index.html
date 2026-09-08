@@ -25,7 +25,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,600&amp;family=Cormorant+Garamond:wght@400;500;600&amp;family=Italianno&amp;family=Montserrat:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="quote-overrides.css">
-  <link rel="stylesheet" href="redesign.css?v=20260908-49">
+  <link rel="stylesheet" href="redesign.css?v=20260908-50">
 </head>
 <body>
   <header class="hero photo photo-1" id="top">
@@ -137,7 +137,12 @@
             </label>
           </fieldset>
           <div class="form-options-grid">
-            <fieldset class="choice-list compact-choices"><legend>Вам потрібне проживання?</legend><label class="choice"><input type="radio" name="accommodation" value="Так"><span>Так</span></label><label class="choice"><input type="radio" name="accommodation" value="Ні"><span>Ні</span></label></fieldset>
+            <fieldset class="choice-list compact-choices stay-days-field">
+              <legend>Які дні ви проведете з нами?</legend>
+              <label class="choice"><input type="radio" name="attendance_days" value="Два дні з ночівлею (10–11 жовтня)"><span>Два дні з ночівлею (10–11 жовтня)</span></label>
+              <label class="choice"><input type="radio" name="attendance_days" value="Тільки перший день з ночівлею (10 жовтня)"><span>Тільки перший день з ночівлею (10 жовтня)</span></label>
+              <label class="choice"><input type="radio" name="attendance_days" value="Тільки перший день без ночівлі (10 жовтня)"><span>Тільки перший день без ночівлі (10 жовтня)</span></label>
+            </fieldset>
             <fieldset class="choice-list compact-choices"><legend>Вам потрібен трансфер?</legend><label class="choice"><input type="radio" name="transfer" value="Так"><span>Так</span></label><label class="choice"><input type="radio" name="transfer" value="Ні"><span>Ні</span></label></fieldset>
           </div>
           <label class="text-field"><span>Залиште нам кілька слів</span><textarea name="message" rows="1" placeholder="Напишіть, якщо хочете щось додати"></textarea></label>

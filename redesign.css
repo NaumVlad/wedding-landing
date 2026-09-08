@@ -981,6 +981,10 @@ time,
   align-content: start;
 }
 
+.stay-days-field {
+  grid-column: 1 / -1;
+}
+
 .submit-button {
   justify-self: center;
   min-width: min(330px, calc(100vw - 40px));
