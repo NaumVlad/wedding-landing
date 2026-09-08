@@ -705,12 +705,22 @@ time,
   transform: none;
 }
 
+.details-copy {
+  display: grid;
+  justify-items: end;
+  line-height: 0.94;
+}
+
+.details-last-word {
+  position: relative;
+}
+
 .details-arrow {
   position: absolute;
-  top: 1.35em;
-  left: 12vw;
-  width: 0.8em;
-  height: 1.9em;
+  top: 0.92em;
+  left: 48%;
+  width: 0.64em;
+  height: 1.55em;
   overflow: visible;
   font-size: 1em;
   transform: translateX(-50%);
@@ -1419,7 +1429,7 @@ time,
   .details-note {
     top: auto;
     right: 0;
-    bottom: 64px;
+    bottom: 100px;
     left: 0;
     color: rgba(255, 255, 255, 0.98);
     width: 100%;
@@ -1435,9 +1445,9 @@ time,
   }
 
   .details-arrow {
-    top: 0.25em;
-    left: 12.5vw;
-    height: 3.1em;
+    top: 0.92em;
+    left: 48%;
+    height: 1.55em;
   }
 
   .choice-list {
