@@ -1446,9 +1446,9 @@ time,
 
   .guest-form-title {
     margin-bottom: 46px;
-    font-size: clamp(2rem, 7.4vw, 4.4rem);
+    font-size: clamp(2.15rem, 8vw, 4.5rem);
     line-height: 0.93;
-    letter-spacing: -0.025em;
+    letter-spacing: 0;
     white-space: nowrap;
   }
 
@@ -1483,13 +1483,13 @@ time,
     flex-direction: column;
     gap: 0;
     width: 100%;
-    max-width: 394px;
+    max-width: 540px;
   }
 
   .finale .finale-monogram {
     align-self: center;
-    margin-top: 20px;
-    font-size: clamp(1.25rem, 5.5vw, 1.65rem);
+    margin-top: 26px;
+    font-size: clamp(2.15rem, 9vw, 2.65rem);
   }
 
   .finale-monogram .monogram-letter {
@@ -1498,14 +1498,14 @@ time,
 
   .finale-title {
     margin: 0 0 8px;
-    font-size: clamp(1.9rem, 8vw, 2.35rem);
+    font-size: clamp(2.3rem, 9.5vw, 3rem);
     line-height: 1;
     letter-spacing: 0.06em;
   }
 
   .finale-script {
     margin-bottom: 0;
-    font-size: clamp(2.1rem, 9vw, 2.55rem);
+    font-size: clamp(2.55rem, 10.5vw, 3.15rem);
     line-height: 1.05;
     white-space: nowrap;
   }
