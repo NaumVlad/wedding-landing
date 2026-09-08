@@ -784,10 +784,21 @@ time,
 }
 
 .guest-form-title {
+  position: relative;
   margin: 0 0 38px;
   font: 400 clamp(2.4rem, 6vw, 4rem)/1 "Bodoni Moda", serif;
   letter-spacing: -0.025em;
   text-align: center;
+}
+
+.guest-form-title::before {
+  content: "";
+  position: absolute;
+  top: -26px;
+  right: 8px;
+  left: 8px;
+  height: 1px;
+  background: rgba(22, 43, 52, 0.22);
 }
 
 .rsvp-section form {
@@ -888,6 +899,12 @@ time,
 
 .choice-list .choice input {
   accent-color: var(--blue-dark);
+}
+
+.choice-list .choice span {
+  color: #101f27;
+  font-weight: 400;
+  opacity: 1;
 }
 
 .custom-attendance-field {
