@@ -419,6 +419,11 @@ time,
 
 .dress-code {
   margin-top: 34px;
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.48);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 7px 24px rgba(255, 255, 255, 0.34), 0 10px 26px rgba(54, 75, 85, 0.08);
   text-align: left;
 }
 
