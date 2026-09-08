@@ -540,15 +540,15 @@ time,
 
 .location-section::before {
   z-index: -2;
-  inset: -8px;
+  inset: -2px;
   background: url("assets/location-osokory-background.png") center 44% / cover no-repeat;
-  filter: blur(2.8px);
-  transform: scale(1.035);
+  filter: blur(0.6px) saturate(1.18) contrast(1.04);
+  transform: scale(1.008);
 }
 
 .location-section::after {
   z-index: -1;
-  background: linear-gradient(180deg, rgba(253, 251, 247, 0.96) 0%, rgba(253, 251, 247, 0.86) 30%, rgba(253, 251, 247, 0.42) 58%, rgba(29, 47, 55, 0.14) 100%);
+  background: linear-gradient(180deg, rgba(253, 251, 247, 0.76) 0%, rgba(253, 251, 247, 0.48) 28%, rgba(253, 251, 247, 0.12) 56%, rgba(18, 34, 41, 0.08) 100%);
 }
 
 .location-inner {
@@ -579,12 +579,10 @@ time,
 .location-card {
   width: min(620px, 100%);
   margin-inline: auto;
-  padding: clamp(34px, 5vw, 52px);
-  border: 1px solid rgba(112, 134, 147, 0.44);
-  background: rgba(253, 251, 247, 0.76);
-  box-shadow: 0 22px 55px rgba(45, 66, 75, 0.16);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  padding: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
 }
 
 .location-card p {
@@ -594,6 +592,7 @@ time,
   line-height: 1.75;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  text-shadow: 0 1px 10px rgba(253, 251, 247, 0.92), 0 0 24px rgba(253, 251, 247, 0.76);
 }
 
 .location-card strong {
@@ -606,27 +605,62 @@ time,
 }
 
 .location-button {
+  position: relative;
   display: inline-flex;
+  justify-content: center;
   align-items: center;
-  gap: 16px;
+  gap: 14px;
+  width: 263px;
+  height: 76px;
   margin-top: 26px;
-  padding: 13px 23px;
-  border: 1px solid var(--blue-dark);
-  border-radius: 2px;
-  background: rgba(253, 251, 247, 0.34);
+  padding: 0 28px 4px 34px;
+  border: 0;
+  background: transparent;
   color: var(--blue-dark);
   font-size: 0.66rem;
   font-weight: 500;
   letter-spacing: 0.15em;
   text-decoration: none;
   text-transform: uppercase;
-  transition: background-color 180ms ease, color 180ms ease;
+  transition: color 180ms ease, transform 180ms ease;
 }
 
 .location-button:hover,
 .location-button:focus-visible {
-  background: var(--blue-dark);
   color: #fff;
+  transform: translateY(-2px);
+}
+
+.location-button-outline {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.location-button-outline path {
+  fill: rgba(253, 251, 247, 0.16);
+  stroke: currentColor;
+  stroke-width: 1.35;
+  vector-effect: non-scaling-stroke;
+  transition: fill 180ms ease;
+}
+
+.location-button:hover .location-button-outline path,
+.location-button:focus-visible .location-button-outline path {
+  fill: rgba(22, 43, 52, 0.78);
+}
+
+.location-button > span,
+.location-button > b {
+  position: relative;
+  z-index: 1;
+}
+
+.location-button > b {
+  font-size: 0.9rem;
+  font-weight: 300;
 }
 
 .floral-location {
@@ -1143,7 +1177,7 @@ time,
   }
 
   .location-card {
-    padding: 26px 20px 28px;
+    padding: 0 10px;
   }
 
   .floral-location {
