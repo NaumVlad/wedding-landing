@@ -1161,7 +1161,7 @@ time,
     left: 50%;
     display: block;
     color: rgba(255, 255, 255, 0.88);
-    font: 300 2.9rem/1 Montserrat, sans-serif;
+    font: 300 3.35rem/1 Montserrat, sans-serif;
     text-shadow: 0 2px 7px rgba(0, 0, 0, 0.55);
     transform: translateX(-50%);
     animation: scroll-cue-float 1.6s ease-in-out infinite;
