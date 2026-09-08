@@ -796,6 +796,11 @@ time,
   line-height: 1.65;
 }
 
+.rsvp-section form .gift-note-card {
+  width: 100%;
+  margin: 4px 0 0;
+}
+
 .guest-form-title {
   position: relative;
   margin: 0 0 38px;
