@@ -226,6 +226,24 @@ time,
   letter-spacing: 0.03em;
 }
 
+.invitation-photo-wrap {
+  position: relative;
+  margin-top: -1px;
+  background: #eeeae3;
+}
+
+.invitation-photo-wrap::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 110px;
+  background: linear-gradient(180deg, #eeeae3 0%, rgba(238, 234, 227, 0.82) 24%, rgba(238, 234, 227, 0.28) 62%, transparent 100%);
+  pointer-events: none;
+}
+
 .invitation-photo {
   display: block;
   width: 100%;
