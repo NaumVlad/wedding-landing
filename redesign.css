@@ -684,14 +684,17 @@ time,
 
 .details-note {
   position: absolute;
-  right: 6vw;
+  right: 0;
   bottom: clamp(36px, 6vw, 80px);
-  left: auto;
+  left: 0;
   top: auto;
   display: inline-flex;
   align-items: center;
+  justify-content: flex-end;
   gap: 12px;
+  width: 100%;
   margin: 0;
+  padding: 0 6vw;
   color: rgba(255, 255, 255, 0.88);
   font: 500 clamp(2.7rem, 6vw, 4.4rem)/1.1 "Bodoni Moda", "Times New Roman", serif;
   letter-spacing: 0.02em;
@@ -705,7 +708,7 @@ time,
 .details-arrow {
   position: absolute;
   top: 1.35em;
-  left: 46%;
+  left: 12vw;
   width: 0.8em;
   height: 1.9em;
   overflow: visible;
@@ -1415,11 +1418,13 @@ time,
 
   .details-note {
     top: auto;
-    right: 20px;
+    right: 0;
     bottom: 64px;
-    left: auto;
+    left: 0;
     color: rgba(255, 255, 255, 0.98);
-    max-width: calc(100% - 40px);
+    width: 100%;
+    max-width: none;
+    padding: 0 20px;
     font-size: clamp(2.5rem, 11.2vw, 3.1rem);
     font-weight: 500;
     line-height: 1.1;
@@ -1431,7 +1436,7 @@ time,
 
   .details-arrow {
     top: 1.45em;
-    left: 48%;
+    left: 21vw;
   }
 
   .choice-list {
