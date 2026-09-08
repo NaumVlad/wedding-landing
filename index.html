@@ -20,7 +20,12 @@
   <meta name="twitter:description" content="Запрошуємо розділити з нами цей особливий день — 10.10.2026">
   <meta name="twitter:image" content="https://naumvlad.github.io/wedding-landing/assets/share-preview.jpg">
   <title>Нікіта & Марія — весільне запрошення</title>
-  <style>html.site-loading body{visibility:hidden}</style>
+  <style>
+    .site-loader{display:none}
+    html.site-loading body>:not(.site-loader){visibility:hidden}
+    html.site-loading .site-loader{position:fixed;z-index:9999;top:0;right:0;left:0;display:block;height:2px;background:rgba(68,90,102,.1)}
+    html.site-loading .site-loader span{display:block;width:var(--site-load-progress,4%);height:100%;background:rgba(68,90,102,.62);transition:width .18s ease}
+  </style>
   <script>document.documentElement.classList.add("site-loading")</script>
   <link rel="preload" as="image" href="assets/hero-portrait.jpg" fetchpriority="high">
   <link rel="preload" as="image" href="assets/invitation-champagne-hydrangea.png">
@@ -35,6 +40,7 @@
   <link rel="stylesheet" href="redesign.css?v=20260908-54">
 </head>
 <body>
+  <div class="site-loader" aria-hidden="true"><span></span></div>
   <header class="hero photo photo-1" id="top">
     <div class="hero-copy">
       <div class="hero-identity">
@@ -167,6 +173,6 @@
     </div>
   </footer>
 
-  <script src="script.js?v=20260908-6"></script>
+  <script src="script.js?v=20260908-7"></script>
 </body>
 </html>

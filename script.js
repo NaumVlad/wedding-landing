@@ -6,7 +6,17 @@ const siteImageSources = [
   "assets/finale-couple.jpg"
 ];
 
-const showSite = () => document.documentElement.classList.remove("site-loading");
+let loadedSiteImages = 0;
+const updateLoadProgress = () => {
+  loadedSiteImages += 1;
+  const progress = Math.round((loadedSiteImages / siteImageSources.length) * 100);
+  document.documentElement.style.setProperty("--site-load-progress", `${progress}%`);
+};
+
+const showSite = () => {
+  document.documentElement.classList.remove("site-loading");
+  document.documentElement.style.removeProperty("--site-load-progress");
+};
 const preloadImage = source => new Promise(resolve => {
   const image = new Image();
   image.onload = () => {
@@ -21,7 +31,7 @@ const preloadImage = source => new Promise(resolve => {
 });
 
 const preloadFallback = window.setTimeout(showSite, 20000);
-Promise.all(siteImageSources.map(preloadImage)).then(() => {
+Promise.all(siteImageSources.map(source => preloadImage(source).finally(updateLoadProgress))).then(() => {
   window.clearTimeout(preloadFallback);
   showSite();
 });
