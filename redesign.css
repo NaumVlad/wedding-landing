@@ -1163,24 +1163,25 @@ time,
     color: rgba(255, 255, 255, 0.88);
     font: 300 3.35rem/1 Montserrat, sans-serif;
     text-shadow: 0 2px 7px rgba(0, 0, 0, 0.55);
-    transform: translateX(-50%);
+    transform: translateX(-50%) scaleY(1.18);
+    transform-origin: center bottom;
     animation: scroll-cue-float 1.6s ease-in-out infinite;
     transition: opacity 280ms ease, transform 280ms ease;
   }
 
   .has-scrolled .scroll-cue {
     opacity: 0;
-    transform: translate(-50%, 8px);
+    transform: translate(-50%, 8px) scaleY(1.18);
     animation: none;
   }
 
   @keyframes scroll-cue-float {
     0%,
     100% {
-      transform: translate(-50%, 0);
+      transform: translate(-50%, 0) scaleY(1.18);
     }
     50% {
-      transform: translate(-50%, 6px);
+      transform: translate(-50%, 6px) scaleY(1.18);
     }
   }
 
