@@ -524,37 +524,27 @@ time,
   position: relative;
   isolation: isolate;
   overflow: hidden;
-  min-height: 92svh;
-  padding: clamp(76px, 9vw, 128px) 0;
-  background: #d9e1e2;
+  min-height: 0;
+  padding: clamp(46px, 5vw, 70px) 0;
+  background: var(--paper);
   text-align: center;
 }
 
 .location-section::before,
 .location-section::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-}
-
-.location-section::before {
-  z-index: -2;
-  inset: -2px;
-  background: url("assets/location-osokory-background.png") center 44% / cover no-repeat;
-  filter: blur(0.6px) saturate(1.18) contrast(1.04);
-  transform: scale(1.008);
-}
-
-.location-section::after {
-  z-index: -1;
-  background: linear-gradient(180deg, rgba(253, 251, 247, 0.76) 0%, rgba(253, 251, 247, 0.48) 28%, rgba(253, 251, 247, 0.12) 56%, rgba(18, 34, 41, 0.08) 100%);
+  content: none;
 }
 
 .location-inner {
   position: relative;
   z-index: 1;
-  max-width: 760px;
+  width: min(820px, calc(100% - 44px));
+  max-width: none;
+  overflow: hidden;
+  padding-top: clamp(42px, 6vw, 72px);
+  border: 1px solid rgba(68, 90, 102, 0.16);
+  background: #eeeae3;
+  box-shadow: 0 18px 46px rgba(54, 75, 85, 0.11);
 }
 
 .location-inner > .section-kicker {
@@ -577,9 +567,9 @@ time,
 }
 
 .location-card {
-  width: min(620px, 100%);
+  width: 100%;
   margin-inline: auto;
-  padding: 0;
+  padding: 0 clamp(28px, 6vw, 70px) clamp(42px, 5vw, 62px);
   border: 0;
   background: transparent;
   box-shadow: none;
@@ -629,6 +619,25 @@ time,
 .location-button:focus-visible {
   background: #354e5a;
   transform: translateY(-2px);
+}
+
+.location-photo {
+  position: relative;
+  height: clamp(420px, 62vw, 680px);
+  margin-top: -1px;
+  background: #d9e1e2 url("assets/location-osokory-background.png") center 42% / cover no-repeat;
+}
+
+.location-photo::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 110px;
+  background: linear-gradient(180deg, #eeeae3 0%, rgba(238, 234, 227, 0.82) 24%, rgba(238, 234, 227, 0.28) 62%, transparent 100%);
+  pointer-events: none;
 }
 
 .floral-location {
@@ -1164,14 +1173,13 @@ time,
   }
 
   .location-section {
-    min-height: 100svh;
-    padding: 48px 0 300px;
+    min-height: 0;
+    padding: 28px 0 48px;
   }
 
-  .location-section::before {
-    background-position: center top;
-    transform: scale(1.17);
-    transform-origin: center top;
+  .location-inner {
+    width: min(calc(100% - 28px), 620px);
+    padding-top: 42px;
   }
 
   .location-inner > .section-kicker {
@@ -1182,7 +1190,12 @@ time,
   }
 
   .location-card {
-    padding: 0 10px;
+    padding: 0 22px 36px;
+  }
+
+  .location-photo {
+    height: min(128vw, 620px);
+    background-position: center 40%;
   }
 
   .floral-location {
