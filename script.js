@@ -82,7 +82,6 @@ if (revealItems.length) {
 }
 
 const form = document.querySelector("#rsvp-form");
-const drinkInputs = [...document.querySelectorAll('input[name="drinks"]')];
 const attendanceInputs = [...document.querySelectorAll('input[name="attendance"]')];
 const customAttendance = document.querySelector("#attendance-custom");
 const customAttendanceField = document.querySelector(".custom-attendance-field");
@@ -146,17 +145,9 @@ attendanceInputs.forEach(input => input.addEventListener("change", () => {
 syncCustomAttendance();
 syncPartyDetails();
 
-drinkInputs.forEach(input => input.addEventListener("change", () => {
-  drinkInputs[0]?.setCustomValidity("");
-  if (drinkInputs.some(drink => drink.checked)) {
-    clearValidationGroup(input.closest(".choice-list"));
-  }
-}));
-
 form?.addEventListener("input", event => {
   const control = event.target;
   if (!(control instanceof HTMLInputElement || control instanceof HTMLTextAreaElement || control instanceof HTMLSelectElement)) return;
-  if (control.matches('input[name="drinks"]')) return;
   if (control.checkValidity()) clearValidationGroup(getValidationGroup(control));
 });
 
@@ -171,13 +162,8 @@ form?.addEventListener("submit", event => {
   ));
   invalidControls.forEach(control => markValidationGroup(getValidationGroup(control)));
 
-  const drinksValid = drinkInputs.some(input => input.checked);
-  if (!drinksValid) {
-    markValidationGroup(drinkInputs[0]?.closest(".choice-list"));
-  }
-
-  if (invalidControls.length || !drinksValid) {
-    const firstInvalidControl = invalidControls[0] || drinkInputs[0];
+  if (invalidControls.length) {
+    const firstInvalidControl = invalidControls[0];
     const firstInvalidGroup = getValidationGroup(firstInvalidControl);
     firstInvalidGroup?.scrollIntoView({ behavior: "smooth", block: "center" });
     window.setTimeout(() => firstInvalidControl?.focus({ preventScroll: true }), 350);
@@ -186,7 +172,6 @@ form?.addEventListener("submit", event => {
 
   const formData = new FormData(form);
   const data = Object.fromEntries(formData);
-  data.drinks = formData.getAll("drinks");
   localStorage.setItem("wedding-rsvp", JSON.stringify(data));
 
   document.querySelector(".form-status").textContent = "Дякуємо! Вашу відповідь збережено на цьому пристрої.";
