@@ -668,7 +668,7 @@ time,
   letter-spacing: 0.02em;
   text-align: right;
   text-decoration: none;
-  text-shadow: 0 2px 7px rgba(8, 12, 14, 0.72);
+  text-shadow: 2px 2px 1px rgba(8, 12, 14, 0.78), 0 4px 12px rgba(8, 12, 14, 0.66);
   white-space: nowrap;
   transform: none;
 }
@@ -679,35 +679,22 @@ time,
   left: 46%;
   width: 0.8em;
   height: 1.9em;
-  overflow: hidden;
-  color: transparent;
+  overflow: visible;
   font-size: 1em;
   transform: translateX(-50%);
 }
 
-.details-arrow::before,
-.details-arrow::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  filter: drop-shadow(0 2px 3px rgba(8, 12, 14, 0.7));
-}
-
-.details-arrow::before {
-  top: 0;
-  bottom: 0.28em;
-  width: 2px;
-  background: #fff;
-  transform: translateX(-50%);
-}
-
-.details-arrow::after {
-  bottom: 0.08em;
-  width: 0.42em;
-  height: 0.42em;
-  border-right: 2px solid #fff;
-  border-bottom: 2px solid #fff;
-  transform: translateX(-50%) rotate(45deg);
+.details-arrow svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  fill: none;
+  stroke: #fff;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  filter: drop-shadow(2px 2px 1px rgba(8, 12, 14, 0.8)) drop-shadow(0 3px 5px rgba(8, 12, 14, 0.55));
 }
 
 .rsvp-section {
@@ -1328,7 +1315,7 @@ time,
     font-weight: 500;
     line-height: 1.1;
     -webkit-text-stroke: 0 transparent;
-    text-shadow: 0 2px 5px rgba(8, 12, 14, 0.88), 0 0 14px rgba(8, 12, 14, 0.5);
+    text-shadow: 2px 2px 1px rgba(8, 12, 14, 0.82), 0 4px 12px rgba(8, 12, 14, 0.7);
     white-space: normal;
     transform: none;
   }
