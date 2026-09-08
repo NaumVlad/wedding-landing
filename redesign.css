@@ -717,7 +717,7 @@ time,
 
 .details-arrow {
   position: absolute;
-  top: 0.92em;
+  top: 1.18em;
   left: 48%;
   width: 0.64em;
   height: 1.55em;
@@ -1445,7 +1445,7 @@ time,
   }
 
   .details-arrow {
-    top: 0.92em;
+    top: 1.18em;
     left: 48%;
     height: 1.55em;
   }
