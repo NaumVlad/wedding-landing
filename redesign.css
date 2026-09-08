@@ -280,6 +280,7 @@ time,
 
 .program-section .section-inner > h2 {
   font-size: clamp(2.15rem, 5.2vw, 4.2rem);
+  text-align: center;
   white-space: nowrap;
   -webkit-text-stroke: 0.7px currentColor;
   paint-order: stroke fill;
