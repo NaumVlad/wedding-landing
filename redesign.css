@@ -1148,7 +1148,7 @@ time,
   }
 
   .program-section {
-    padding: 48px 0 42px;
+    padding: 48px 0 14px;
   }
 
   .program-section .section-inner > h2 {
@@ -1159,15 +1159,15 @@ time,
 
   .location-section {
     min-height: 0;
-    padding: 28px 0 48px;
+    padding: 0 0 48px;
   }
 
   .location-inner {
-    width: min(calc(100% - 28px), 620px);
+    width: min(calc(100% - 36px), 620px);
     min-height: 100svh;
     padding-top: 42px;
     background-position: center top;
-    background-size: auto 116%;
+    background-size: auto 110%;
   }
 
   .location-inner > .section-kicker {
@@ -1201,7 +1201,7 @@ time,
   }
 
   .invitation-copy {
-    width: min(calc(100% - 28px), 620px);
+    width: min(calc(100% - 36px), 620px);
   }
 
   .invitation-card-body {
