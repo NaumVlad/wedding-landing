@@ -136,6 +136,10 @@ time,
   text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5), 3px 4px 6px rgba(0, 0, 0, 0.32);
 }
 
+.scroll-cue {
+  display: none;
+}
+
 .invitation-section {
   position: relative;
   z-index: 1;
@@ -790,6 +794,36 @@ time,
 }
 
 @media (max-width: 759px) {
+  .scroll-cue {
+    position: absolute;
+    z-index: 2;
+    bottom: calc(18px + env(safe-area-inset-bottom));
+    left: 50%;
+    display: block;
+    color: rgba(255, 255, 255, 0.88);
+    font: 300 1.45rem/1 Montserrat, sans-serif;
+    text-shadow: 0 2px 7px rgba(0, 0, 0, 0.55);
+    transform: translateX(-50%);
+    animation: scroll-cue-float 1.6s ease-in-out infinite;
+    transition: opacity 280ms ease, transform 280ms ease;
+  }
+
+  .has-scrolled .scroll-cue {
+    opacity: 0;
+    transform: translate(-50%, 8px);
+    animation: none;
+  }
+
+  @keyframes scroll-cue-float {
+    0%,
+    100% {
+      transform: translate(-50%, 0);
+    }
+    50% {
+      transform: translate(-50%, 6px);
+    }
+  }
+
   .reveal-ready .scroll-reveal {
     opacity: 0;
     transform: translateY(22px);
@@ -1145,6 +1179,10 @@ time,
 }
 
 @media (max-width: 759px) and (prefers-reduced-motion: reduce) {
+  .scroll-cue {
+    animation: none;
+  }
+
   .reveal-ready .scroll-reveal {
     opacity: 1;
     transform: none;

@@ -11,6 +11,13 @@ links?.addEventListener("click", () => {
   menu?.setAttribute("aria-expanded", "false");
 });
 
+const scrollCue = document.querySelector(".scroll-cue");
+if (scrollCue) {
+  const hideScrollCue = () => document.documentElement.classList.add("has-scrolled");
+  if (window.scrollY > 10) hideScrollCue();
+  window.addEventListener("scroll", hideScrollCue, { once: true, passive: true });
+}
+
 const revealItems = document.querySelectorAll([
   ".invitation-copy",
   ".program-section .section-kicker",
