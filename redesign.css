@@ -8,6 +8,35 @@
   --line: #c8d0d3;
 }
 
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  overscroll-behavior-x: none;
+}
+
+body {
+  position: relative;
+  touch-action: pan-y pinch-zoom;
+}
+
+body > header,
+body > main,
+body > footer,
+main > section {
+  width: 100%;
+  max-width: 100%;
+}
+
+@supports (overflow: clip) {
+  html,
+  body,
+  main {
+    overflow-x: clip;
+  }
+}
+
 body {
   background: var(--paper);
   color: var(--ink);
