@@ -1027,12 +1027,13 @@ time,
   width: auto;
   height: auto;
   gap: 0.18em;
+  margin-top: 16px;
   color: #fff;
-  font-size: clamp(3rem, 6vw, 5rem);
+  font-size: clamp(2rem, 4vw, 3.2rem);
 }
 
 .finale-title {
-  margin: 24px 0 4px;
+  margin: 0 0 4px;
   color: #fff;
   font-size: clamp(2.5rem, 6vw, 5rem);
   font-weight: 400;
@@ -1482,7 +1483,8 @@ time,
 
   .finale-monogram {
     align-self: center;
-    font-size: clamp(2.35rem, 10.5vw, 2.9rem);
+    margin-top: 16px;
+    font-size: clamp(1.65rem, 7vw, 2.1rem);
   }
 
   .finale-monogram .monogram-letter {
@@ -1490,7 +1492,7 @@ time,
   }
 
   .finale-title {
-    margin: 14px 0 2px;
+    margin: 0 0 2px;
     font-size: clamp(2rem, 8.6vw, 2.55rem);
     line-height: 1;
     letter-spacing: 0.06em;
