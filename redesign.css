@@ -420,7 +420,7 @@ time,
 
 .dress-code > p {
   margin: 0 0 16px;
-  font-size: 0.86rem;
+  font-size: 0.95rem;
   font-weight: 600;
   letter-spacing: 0.08em;
 }
@@ -1151,7 +1151,7 @@ time,
     position: static;
     top: auto;
     margin-top: 24px;
-    font-size: clamp(2rem, 10vw, 2.55rem);
+    font-size: clamp(1.9rem, 9vw, 2.4rem);
     font-weight: 400;
     letter-spacing: -0.025em;
     text-transform: none;
