@@ -1435,8 +1435,9 @@ time,
   }
 
   .details-arrow {
-    top: 1.45em;
+    top: 0.25em;
     left: 12.5vw;
+    height: 3.1em;
   }
 
   .choice-list {
