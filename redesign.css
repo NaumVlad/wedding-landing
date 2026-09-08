@@ -760,7 +760,8 @@ time,
 }
 
 .rsvp-deadline {
-  margin: -18px 0 48px;
+  margin: 0 0 42px;
+  font-weight: 600;
 }
 
 .gift-note-card {
@@ -1364,11 +1365,11 @@ time,
   }
 
   .rsvp-section {
-    padding-bottom: 42px;
+    padding: 24px 0 42px;
   }
 
   .gift-note-card {
-    margin: 34px 0 70px;
+    margin: 0 0 34px;
     padding: 26px 22px;
     border-radius: 2px;
   }
@@ -1387,9 +1388,9 @@ time,
   }
 
   .rsvp-deadline {
-    margin: 0 0 40px;
+    margin: 0 0 38px;
     color: #99565b;
-    font-weight: 600;
+    font-weight: 700;
   }
 
   .rsvp-deadline strong {
