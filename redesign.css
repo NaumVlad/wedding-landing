@@ -336,14 +336,15 @@ time,
   background: #e5e9e8;
 }
 
-.day-one > header {
+.day-one > header,
+.day-two > header {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
   align-items: center;
 }
 
-.day-one > header .day-label,
-.day-one > header .day-date {
+.day-card > header .day-label,
+.day-card > header .day-date {
   margin: 0;
   font-family: Montserrat, sans-serif;
   font-size: 1rem;
@@ -354,11 +355,11 @@ time,
   -webkit-text-stroke: 0;
 }
 
-.day-one > header .day-date {
+.day-card > header .day-date {
   justify-self: end;
 }
 
-.day-one > header .day-theme {
+.day-card > header .day-theme {
   position: static;
   grid-column: 1 / -1;
   margin: 24px 0 0;
@@ -409,7 +410,8 @@ time,
   line-height: 1.45;
 }
 
-.day-one .schedule-list span {
+.day-one .schedule-list span,
+.day-two .schedule-list span {
   color: #11191d;
   font-weight: 400;
   opacity: 1;
@@ -440,6 +442,15 @@ time,
   border-radius: 50%;
   background: var(--dress-color);
   box-shadow: 0 3px 8px rgba(17, 25, 29, 0.08);
+}
+
+.dress-code-style {
+  display: block;
+  font-family: "Bodoni Moda", "Times New Roman", serif;
+  font-size: 1.35rem;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
 }
 
 .schedule-list b {
@@ -1143,13 +1154,13 @@ time,
     gap: 10px;
   }
 
-  .day-one > header .day-label,
-  .day-one > header .day-date {
+  .day-card > header .day-label,
+  .day-card > header .day-date {
     position: static;
     font-size: 1.05rem;
   }
 
-  .day-one > header .day-theme {
+  .day-card > header .day-theme {
     position: static;
     top: auto;
     margin-top: 24px;
