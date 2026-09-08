@@ -790,6 +790,18 @@ time,
 }
 
 @media (max-width: 759px) {
+  .reveal-ready .scroll-reveal {
+    opacity: 0;
+    transform: translateY(22px);
+    transition: opacity 650ms ease, transform 650ms cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: opacity, transform;
+  }
+
+  .reveal-ready .scroll-reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
   .hero,
   .finale {
     min-height: 100vh;
@@ -1129,5 +1141,13 @@ time,
     font-weight: 400;
     line-height: 1;
     transform: translateY(-0.06em);
+  }
+}
+
+@media (max-width: 759px) and (prefers-reduced-motion: reduce) {
+  .reveal-ready .scroll-reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
   }
 }

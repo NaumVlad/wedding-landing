@@ -11,6 +11,48 @@ links?.addEventListener("click", () => {
   menu?.setAttribute("aria-expanded", "false");
 });
 
+const revealItems = document.querySelectorAll([
+  ".invitation-copy",
+  ".program-section .section-kicker",
+  ".program-section h2",
+  ".day-card",
+  ".location-inner > .section-kicker",
+  ".location-card",
+  ".details-photo",
+  ".rsvp-inner > .section-kicker",
+  ".rsvp-inner > h2",
+  ".gift-note-card",
+  ".guest-form-title",
+  ".rsvp-deadline",
+  ".rsvp-section form",
+  ".finale-copy",
+  ".finale-signature"
+].join(","));
+
+if (revealItems.length) {
+  document.documentElement.classList.add("reveal-ready");
+  revealItems.forEach(item => item.classList.add("scroll-reveal"));
+
+  const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  if (reducedMotion || !("IntersectionObserver" in window)) {
+    revealItems.forEach(item => item.classList.add("is-visible"));
+  } else {
+    const revealObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add("is-visible");
+        revealObserver.unobserve(entry.target);
+      });
+    }, {
+      threshold: 0.12,
+      rootMargin: "0px 0px -7%"
+    });
+
+    revealItems.forEach(item => revealObserver.observe(item));
+  }
+}
+
 const form = document.querySelector("#rsvp-form");
 const drinkInputs = [...document.querySelectorAll('input[name="drinks"]')];
 const attendanceInputs = [...document.querySelectorAll('input[name="attendance"]')];
