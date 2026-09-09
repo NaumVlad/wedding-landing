@@ -212,7 +212,7 @@ form?.addEventListener("submit", event => {
   const data = Object.fromEntries(formData);
   localStorage.setItem("wedding-rsvp", JSON.stringify(data));
 
-  document.querySelector(".form-status").textContent = "Дякуємо! Вашу відповідь збережено на цьому пристрої.";
+  document.querySelector(".form-status").textContent = "Ваша анкета відправлена до молодих. Дякуємо вам!";
   form.reset();
   clearValidationState();
   syncCustomAttendance();
