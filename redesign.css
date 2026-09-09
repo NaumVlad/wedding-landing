@@ -1011,6 +1011,19 @@ time,
   border-color: var(--blue-dark);
   background: var(--blue-dark);
   color: #fff;
+  transition: transform 140ms ease, box-shadow 140ms ease, filter 140ms ease;
+}
+
+.submit-button:active,
+.submit-button:disabled {
+  opacity: 1;
+  transform: translateY(3px) scale(0.985);
+  box-shadow: inset 0 5px 12px rgba(16, 31, 39, 0.34), 0 2px 5px rgba(31, 49, 58, 0.12);
+  filter: brightness(0.88);
+}
+
+.submit-button:disabled {
+  cursor: wait;
 }
 
 .required-mark,
