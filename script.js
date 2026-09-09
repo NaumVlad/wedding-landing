@@ -120,6 +120,7 @@ if (revealItems.length) {
 }
 
 const form = document.querySelector("#rsvp-form");
+const rsvpEndpoint = "https://script.google.com/macros/s/AKfycbxlOXYoKZKnAm6qxkFukBqObFjFsh-X_IvREpX961egwaJdImCg60N3DZ-zJLtWyN3V/exec";
 const attendanceInputs = [...document.querySelectorAll('input[name="attendance"]')];
 const customAttendance = document.querySelector("#attendance-custom");
 const customAttendanceField = document.querySelector(".custom-attendance-field");
@@ -189,7 +190,7 @@ form?.addEventListener("input", event => {
   if (control.checkValidity()) clearValidationGroup(getValidationGroup(control));
 });
 
-form?.addEventListener("submit", event => {
+form?.addEventListener("submit", async event => {
   event.preventDefault();
 
   document.querySelector(".form-status").textContent = "";
@@ -211,10 +212,29 @@ form?.addEventListener("submit", event => {
   const formData = new FormData(form);
   const data = Object.fromEntries(formData);
   localStorage.setItem("wedding-rsvp", JSON.stringify(data));
+  const submitButton = form.querySelector(".submit-button");
+  const formStatus = document.querySelector(".form-status");
 
-  document.querySelector(".form-status").textContent = "Ваша анкета відправлена до молодих. Дякуємо вам!";
-  form.reset();
-  clearValidationState();
-  syncCustomAttendance();
-  syncPartyDetails();
+  submitButton.disabled = true;
+  formStatus.textContent = "Надсилаємо анкету…";
+
+  try {
+    await fetch(rsvpEndpoint, {
+      method: "POST",
+      mode: "no-cors",
+      headers: { "Content-Type": "text/plain;charset=utf-8" },
+      body: JSON.stringify(data),
+      keepalive: true,
+    });
+
+    formStatus.textContent = "Ваша анкета відправлена до молодих. Дякуємо вам!";
+    form.reset();
+    clearValidationState();
+    syncCustomAttendance();
+    syncPartyDetails();
+  } catch {
+    formStatus.textContent = "Не вдалося відправити анкету. Будь ласка, спробуйте ще раз.";
+  } finally {
+    submitButton.disabled = false;
+  }
 });
