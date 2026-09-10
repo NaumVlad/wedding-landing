@@ -456,17 +456,17 @@ time,
   text-align: left;
 }
 
-.dress-code > p {
+.dress-code-title {
   position: relative;
   width: max-content;
-  margin: 0 0 16px;
+  margin: 0 0 11px;
   padding-bottom: 7px;
-  font-size: 0.95rem;
+  font-size: 0.86rem;
   font-weight: 600;
   letter-spacing: 0.08em;
 }
 
-.dress-code > p::after {
+.dress-code-title::after {
   content: "";
   position: absolute;
   right: 0;
@@ -477,15 +477,25 @@ time,
   opacity: 0.58;
 }
 
+.dress-code-note {
+  max-width: 430px;
+  margin: 0 0 17px;
+  color: rgba(17, 25, 29, 0.76);
+  font-size: 0.72rem;
+  font-weight: 400;
+  line-height: 1.55;
+  letter-spacing: 0.025em;
+}
+
 .dress-code-colors {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 10px;
 }
 
 .dress-code-colors span {
-  width: 38px;
-  height: 38px;
+  width: 32px;
+  height: 32px;
   border: 1px solid rgba(17, 25, 29, 0.15);
   border-radius: 50%;
   background: var(--dress-color);
@@ -773,14 +783,14 @@ time,
 }
 
 .rsvp-deadline {
-  margin: 0 0 58px;
+  margin: 0 0 28px;
   font-size: clamp(1.05rem, 2.8vw, 1.35rem);
   font-weight: 700;
   line-height: 1.5;
 }
 
 .gift-note-card {
-  margin: 8px auto 46px;
+  margin: 0 auto 58px;
   padding: 32px 34px;
   border: 1px solid rgba(68, 90, 102, 0.24);
   background: rgba(253, 251, 247, 0.82);
@@ -794,11 +804,6 @@ time,
   font-size: clamp(1rem, 2.2vw, 1.2rem);
   font-weight: 700;
   line-height: 1.65;
-}
-
-.rsvp-section form .gift-note-card {
-  width: 100%;
-  margin: 4px 0 0;
 }
 
 .guest-form-title {
@@ -1502,7 +1507,7 @@ time,
   }
 
   .rsvp-deadline {
-    margin: 0 0 58px;
+    margin: 0 0 24px;
     color: #b3474f;
     font-size: 1.12rem;
     font-weight: 700;

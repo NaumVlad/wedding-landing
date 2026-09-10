@@ -37,7 +37,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,600&amp;family=Cormorant+Garamond:wght@400;500;600&amp;family=Italianno&amp;family=Montserrat:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="quote-overrides.css">
-  <link rel="stylesheet" href="redesign.css?v=20260910-62">
+  <link rel="stylesheet" href="redesign.css?v=20260910-63">
 </head>
 <body>
   <div class="site-loader" aria-hidden="true"><span></span></div>
@@ -83,7 +83,8 @@
               <li><time>16:30</time><span>Святкова вечеря</span></li>
             </ol>
             <div class="dress-code">
-              <p>Dress code:</p>
+              <p class="dress-code-title">Dress code:</p>
+              <p class="dress-code-note">Дрес-код не обов’язковий, але за бажанням ви можете нас підтримати</p>
               <div class="dress-code-colors" aria-label="Кольори дрес-коду">
                 <span style="--dress-color: #9da78f"></span>
                 <span style="--dress-color: #d0d0c2"></span>
@@ -101,7 +102,7 @@
               <li><time>15:00</time><span><b>Фінал весільного марафону</b><small>Обіймаємося, цілуємося та кажемо один одному «до побачення!»</small></span></li>
             </ol>
             <div class="dress-code">
-              <p>Dress code:</p>
+              <p class="dress-code-title">Dress code:</p>
               <span class="dress-code-style">Ukrainian Style</span>
             </div>
           </article>
@@ -132,6 +133,9 @@
     <section class="rsvp-section" id="rsvp">
       <div class="section-inner rsvp-inner">
         <p class="rsvp-deadline">Будь ласка, підтвердьте присутність до <strong>15.09.2026</strong></p>
+        <div class="gift-note-card">
+          <p>Будемо вдячні, якщо замість квітів подаруєте корм для тварин.</p>
+        </div>
         <h3 class="guest-form-title">Анкета гостя</h3>
         <form id="rsvp-form" novalidate>
           <label class="text-field"><span>Ваше ім’я та прізвище <b class="required-mark">*</b></span><input name="name" required placeholder="Ім’я та прізвище"></label>
@@ -158,15 +162,10 @@
             <fieldset class="choice-list compact-choices stay-days-field">
               <legend>Які дні ви проведете з нами?</legend>
               <label class="choice"><input type="radio" name="attendance_days" value="Два дні з ночівлею (10–11 жовтня)"><span>Два дні з ночівлею (10–11 жовтня)</span></label>
-              <label class="choice"><input type="radio" name="attendance_days" value="Тільки перший день з ночівлею (10 жовтня)"><span>Тільки перший день з ночівлею<br>(10 жовтня)</span></label>
               <label class="choice"><input type="radio" name="attendance_days" value="Тільки перший день без ночівлі (10 жовтня)"><span>Тільки перший день без ночівлі<br>(10 жовтня)</span></label>
             </fieldset>
-            <fieldset class="choice-list compact-choices"><legend>Вам потрібен трансфер?</legend><label class="choice"><input type="radio" name="transfer" value="Так"><span>Так</span></label><label class="choice"><input type="radio" name="transfer" value="Ні"><span>Ні</span></label></fieldset>
           </div>
           <label class="text-field"><span>Залиште нам кілька слів</span><textarea name="message" rows="1" placeholder="Напишіть, якщо хочете щось додати"></textarea></label>
-          <div class="gift-note-card">
-            <p>Будемо вдячні, якщо замість квітів подаруєте корм для тварин.</p>
-          </div>
           <button class="button submit-button" type="submit">Надіслати відповідь</button><p class="form-status" role="status"></p>
         </form>
       </div>
