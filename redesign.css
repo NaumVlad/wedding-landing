@@ -1036,6 +1036,10 @@ time,
   cursor: wait;
 }
 
+.form-status:empty {
+  display: none;
+}
+
 .required-mark,
 .rsvp-deadline strong {
   color: var(--blue-dark);
