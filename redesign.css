@@ -255,6 +255,16 @@ time,
   letter-spacing: 0.03em;
 }
 
+.date-separator {
+  display: inline-block;
+  margin: 0 0.12em;
+  color: #000;
+  font-family: Montserrat, sans-serif;
+  font-size: 0.65em;
+  font-weight: 700;
+  vertical-align: 0.08em;
+}
+
 .invitation-photo-wrap {
   position: relative;
   margin-top: -1px;
